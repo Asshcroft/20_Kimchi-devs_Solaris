@@ -1,33 +1,30 @@
-# =========================
 # Godot 4+
-# =========================
 .godot/
 .import/
 .export/
-.export_presets.cfg
+export_presets.cfg
+export.cfg
+export_credentials.cfg
 
-# Android build output
+# Imported translations
+*.translation
+
+# Android and Mono
 /android/
+.mono/
+data_*/
+mono_crash.*.json
 
-# =========================
-# Logs
-# =========================
+# Logs and OS junk
 *.log
-
-# =========================
-# OS junk
-# =========================
 .DS_Store
 Thumbs.db
+.nomedia
 
-# =========================
 # Editors
-# =========================
 .vscode/
 .idea/
 
-# =========================
-# Temporary / backup files
-# =========================
+# Temporary files
 *~
 *.tmp
