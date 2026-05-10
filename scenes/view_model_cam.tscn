@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bf8kwcpb46ftx"]
+
+[ext_resource type="Script" uid="uid://d2mdfymwurpg5" path="res://scripts/Hands/view_model_cam.gd" id="1_ca83v"]
+[ext_resource type="PackedScene" uid="uid://cqhaiju57ldku" path="res://scenes/hands/hand_orig.tscn" id="2_ca83v"]
+
+[node name="view_model_cam" type="Camera3D" unique_id=577968324]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+cull_mask = 2
+fov = 80.0
+near = 0.1
+far = 10.0
+script = ExtResource("1_ca83v")
+
+[node name="hand_orig" parent="." unique_id=1229763980 instance=ExtResource("2_ca83v")]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ukcyvysfjj4y"
+path="res://.godot/imported/turret.dialogue-0d3289ed7129c5151b1461c6730bcb42.tres"
+
+[deps]
+
+source_file="res://dialogues/turret.dialogue"
+dest_files=["res://.godot/imported/turret.dialogue-0d3289ed7129c5151b1461c6730bcb42.tres"]
+
+[params]
+
+defaults=true

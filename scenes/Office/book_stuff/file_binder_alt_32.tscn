@@ -1,0 +1,54 @@
+[gd_scene format=4 uid="uid://bkxlexooadhym"]
+
+[ext_resource type="Texture2D" uid="uid://cfndkpt3ancc0" path="res://assets/structures/Office/book_stuff/file_binder_alt3_file_binder.jpg" id="1_pq4tg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2v0ap"]
+resource_name = "Binders"
+cull_mode = 2
+albedo_texture = ExtResource("1_pq4tg")
+metallic = 0.69430053
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_uolyw"]
+_surfaces = [{
+"aabb": AABB(-0.0455533, 0, -0.14874095, 0.0911066, 0.4224518, 0.2974819),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABQABAAMABQADAAQABgABAAUABgACAAEABwAGAAUABAAHAAUACAACAAYABwAIAAYABAAAAAkACAAKAAIABwAKAAgACwAAAAIACQAAAAsACwACAAoABAAJAAwACQALAAwABAANAAcABAAMAA0ABwAOAAoADQAOAAcADwALAAoADAALAA8ADwAKAA4ADAAPAA0ADQAPAA4A"),
+"name": "Binders",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AAAAAP//AACdTf//AAAAAAAA/////wAAnU0AAAAAAACUYJIFRAAAAJRgbPpEAAAAzhRs+jD6AABqn2z6RAAAADDrbPow+gAAzhSSBTD6AAD///////8AAP//AAD//wAAMOuSBTD6AABqn5IFRAAAAGGy//8AAAAAYbIAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ef6gd"]
+resource_name = "file_binder_alt3_Cube_009"
+_surfaces = [{
+"aabb": AABB(-0.0455533, 0, -0.14874095, 0.0911066, 0.4224518, 0.2974819),
+"attribute_data": PackedByteArray("Obrd2p3i94k5uveJneLd2mcD0W2tOId8rTjRbWcDh3w55LbopazKgTnkyoGlrLbonv8u+lno9IGe//SBWegu+t82ZHJRA8N93zaMd1EDLWyANvh3KwHpboA23HMrAex8787CkYzHnNEkySnQfM2wkSTJKdB8zbCR787CkYzHnNHvzuSIfM2x4e/Ot998zeuGvdO33zDV64a90+SIMNWx4YnZKdAw1bCRvdPCkSDbnNG908KRINuc0YnZKdAw1bCRJMkp0CDbnNGJ2SnQjMec0YnZKdCMx5zRJMkp0CDbnNE="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUA"),
+"material": SubResource("StandardMaterial3D_2v0ap"),
+"name": "Binders",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 56,
+"vertex_data": PackedByteArray("AAAAAP//AACdTf//AAAAAAAA/////wAAnU0AAAAAAACUYJIFRAAAAGqfbPpEAAAAlGBs+kQAAABqn5IFRAAAAGGyAAAAAMXD////////xcNhsv//AADFw///AAD//8XD//8AAP//AIAAAP////8AgP///////wCAAAAAAP//AICUYJIFRACqKjDrkgUw+qoqap+SBUQAqirOFJIFMPqqKmqfbPpEAFTVzhRs+jD6VNWUYGz6RABU1TDrbPow+lTVlGCSBUQAHDoAAAAA//8cOs4UkgUw+hw6nU0AAAAAHDrOFGz6MPrixZ1N//8AAOLFlGBs+kQA4sUAAP/////ixZRgbPpEAAAAnU0AAAAAAACUYJIFRAAAAJ1N//8AAAAAap+SBUQAAABhsv//AAAAAGqfbPpEAAAAYbIAAAAAAAAw65IFMPocOmGyAAAAABw6ap+SBUQAHDr//wAA//8cOmqfbPpEAOLF////////4sUw62z6MPrixWGy//8AAOLFzhSSBTD6yxn//wAA///LGTDrkgUw+ssZAAAAAP//yxkw62z6MPoz5gAA/////zPmzhRs+jD6M+b///////8z5v//B73//we9//8Hvf//B73/v/+//7//v/+//7//v/+//38AAP9/AAD/fwAA/38AAP9/////f////3////9///9VVVRVVFVUVVVVVFVUVVRVVNWqKlTVqipU1aoqVNWqKowfcz6MH3M+jB9zPowfcz5zvnJgc75yYHO+cmBzvnJgGf3/fxn9/38Z/f9/Gf3/f/7/GX3//xl9///lgv7/GX2LQYyfi0GMn4tBjJ+LQYyfcuCLwXLgi8Fy4IvBcuCLwQAA/38AAP9/AAD/fwAA/3////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_uolyw")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_reln3"]
+points = PackedVector3Array(-0.028826246, -0.0033531785, -0.105083786, 0.051632214, 0.42585316, 0.14973253, -0.044433184, 0.4065679, 0.13617258, 0.024809446, 0.42585316, -0.15205318, 0.051642064, -0.0033531785, 0.14973253, -0.04895317, -0.0033531785, 0.10946883, 0.024809446, -0.0033531785, -0.15205318, -0.022120554, 0.42585316, -0.15205318, -0.04895317, 0.42585316, 0.10946883, -0.044433184, 0.015932096, 0.13617258, -0.022120554, -0.0033531785, -0.15205318, 0.051642064, 0.41913107, 0.13626206, -0.028826246, 0.42585316, -0.105083786, 0.051642064, -0.0033531785, 0.13626206, -0.042237632, 0.42585316, 0.035706215, -0.042237632, -0.0033531785, 0.035706215, 0.051632214, 0.42585316, 0.13632114)
+
+[node name="file_binder_alt32" type="StaticBody3D" unique_id=2104578752]
+
+[node name="file_binder_alt3" type="MeshInstance3D" parent="." unique_id=32415428]
+mesh = SubResource("ArrayMesh_ef6gd")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=206172406]
+shape = SubResource("ConvexPolygonShape3D_reln3")

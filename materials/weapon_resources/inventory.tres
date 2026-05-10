@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" format=3 uid="uid://xnpnu1sy48ng"]
+
+[ext_resource type="PackedScene" uid="uid://c3yhxt2rhltbj" path="res://scenes/objects/inventory.tscn" id="1_cu2jg"]
+[ext_resource type="Script" uid="uid://d3us6njg3fxol" path="res://scripts/weapon/weapon_resource.gd" id="1_elkne"]
+
+[resource]
+script = ExtResource("1_elkne")
+Weapon_Name = "Inventory"
+Activate_Anim = "draw_inventory"
+Shoot_Anim = "deactivate_inventory"
+Deactivate_Anim = "deactivate_inventory"
+Out_Of_Ammo_Anim = "No_Weapon"
+Current_Ammo = 1
+Type = 1
+Projectile_To_Load = ExtResource("1_cu2jg")
+Weapon_Drop = ExtResource("1_cu2jg")
+Not_weapon = true
+Is_Placeable = true
+metadata/_custom_type_script = "uid://d3us6njg3fxol"

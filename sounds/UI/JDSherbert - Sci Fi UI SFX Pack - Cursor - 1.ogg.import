@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dy3m7jqckvcac"
+path="res://.godot/imported/JDSherbert - Sci Fi UI SFX Pack - Cursor - 1.ogg-eca0c1bc87cb6c52a77fe073e66062dc.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/UI/JDSherbert - Sci Fi UI SFX Pack - Cursor - 1.ogg"
+dest_files=["res://.godot/imported/JDSherbert - Sci Fi UI SFX Pack - Cursor - 1.ogg-eca0c1bc87cb6c52a77fe073e66062dc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

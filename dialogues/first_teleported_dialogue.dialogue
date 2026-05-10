@@ -1,0 +1,28 @@
+~ start
+do Global.is_autoplay = true
+do Global.play_voice("button")
+Narrator: Great! And there's the button. Go ahead and press it.
+Narrator: You did well enough, [wait=1.0] but keep in mind that you won't always be able to teleport just anywhere.
+Narrator: If you're standing in an empty field in one world, [wait=1.0] there might be a meatpacking plant in that exact same spot in another.
+=> END
+
+~ desert_entered
+do Global.is_autoplay = true
+do Global.play_voice("desert_entered")
+Narrator: ... Looks like we can't get through here.
+Narrator: I think you know what to do.
+Tip: [wave]You can travel in different dimensions to overcome some obstacles[/wave]
+=> END
+
+
+~ valley_entered
+do Global.play_voice("valley")
+do Global.is_autoplay = true
+do Global.input_locked = true
+Narrator: What's that saying they have on Stavrapulon? [speed=0.8][i]Ten teeth are better than two![/i][/speed]
+Narrator: ...I suppose you've hardly heard that proverb.[wait=1.0] Considering... you were born just a couple of minutes ago.
+Narrator: Anyway, try entering that door at the end of the stone path.[wait=3.0] That's a stable [color=green]Ind Soc[/color] phase transporter,[wait=1.0] for civilian use!
+Narrator: Unfortunately [wait=0.5] due to the tear in the fabric of space-time on this planet, [wait=1.0]all doors lead to god-knows-where.
+Narrator: But I don't think we have any other options anyway.[wait=2.0] You can't climb the cliffs.[wait=1.0] You don't have hands!
+do Global.input_locked = false
+=> END

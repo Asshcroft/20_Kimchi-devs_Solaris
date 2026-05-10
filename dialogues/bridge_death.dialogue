@@ -1,0 +1,39 @@
+~ start
+do Global.is_autoplay = true
+do Global.play_voice("into_abyss_1")
+Narrator: And what is that supposed to mean?
+Narrator: So, you think jumping off the edge,[wait=2.0] of a bridge into an abyss where you can't even see the bottom [wait=1.0 ]is a good idea?
+Narrator: Or were you sure [wait=2.0] that I would save you? Or... or are you just [b]insane[/b]?
+Narrator: [i]Sighs[/i], look, I'll bring you back, but don't do that again, please.
+=> return_player
+
+
+~ first_reapet
+do Global.is_autoplay = true
+do Global.play_voice("into_abyss_2")
+Narrator: Grmph... This is starting to get a bit annoying...
+Narrator: Listen, maybe you didn't like the game? Did you decide to stage a protest this way?
+Narrator: ...I get it, you think that by jumping into this hole you’re achieving something.[wait=1.0] You’re not.
+Narrator: You see... there won’t even be any interesting dialogue here,[wait=1.0] you’re just jumping into a pit.
+Narrator: Don't do that again[wait=1.0] [speed=0.2] [shake rate=10 level=10][b]please[/b][/shake].
+=> return_player
+
+~ second_reapet
+do Global.is_autoplay = true
+do Global.play_voice("into_abyss_3")
+Narrator: [i]Sighs[/i]. Have...[wait=1.0] Have you ever thought about ending it all?
+Narrator: It’s just that right now, you’re jumping off a cliff,[wait=2.0] likely knowing that nothing will happen to you.
+Narrator: Your consciousness understands [wait=1.0] [speed=0.5] that this action won't carry any consequences, [wait=1.0] so there's no need to worry. However...[wait=2.0][speed=0.5]have you ever thought about jumping off the roof of, say, a nine-story building? [wait=2.0][speed=0.5] [b]For real[/b].
+Narrator: ... [speed=0.4]Have you ever heard the expression — [i]"you are my last 7 minutes"[/i]? People usually say that to those they love and value above everything else.[wait=3.0]
+Narrator: [speed=0.5]This expression comes from a myth that the human brain can live for up to 7 minutes after the heart stops... They say that during those last 7 minutes, the brain manages to replay the most important moments of a person's life.
+Narrator: [speed=0.5]When someone says that [b]you[/b] are their last 7 minutes, it usually means that they cherish you and believe that, most likely, right before they die,[wait=3.0] they will be thinking of you first.
+Narrator: [speed=0.5]You might ask why I'm telling you all this. [speed=0.4] It's just that... [wait=4.0][speed=0.6] [shake rate=20 level=10][b][color=red]IF YOU JUMP OFF A DAMN CLIFF HUNDREDS OF METERS HIGH, YOUR BRAIN WILL TURN INTO A PIECE OF COW DUNG THAT CERTAINLY WON'T LAST EVEN 3 SECONDS AFTER IMPACT WITH THE GROUND.[/color][/b][/shake]
+Narrator: ...
+Narrator: ...
+Narrator: I'm just putting up a barrier. Suck on that.
+=> return_player
+
+~ return_player
+
+do Global.spawn()
+=> END

@@ -1,0 +1,84 @@
+[gd_scene format=4 uid="uid://oqg0nvp44wdu"]
+
+[ext_resource type="Texture2D" uid="uid://d0r26s7nqfrsf" path="res://assets/structures/all_fences/metal/metalfence_both_sides_no_topbar_TexturesCom_Metal_PipeRusted2_1_82x0_47_512_albedo.png" id="1_0niit"]
+[ext_resource type="Texture2D" uid="uid://d0ddnbb2f02q" path="res://assets/structures/all_fences/metal/metalfence_both_sides_no_topbar_TexturesCom_MetalVarious0026_1_seamless_S.png" id="2_ad8wg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7aah4"]
+resource_name = "rusted_pipe"
+cull_mode = 2
+albedo_texture = ExtResource("1_0niit")
+texture_filter = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4klah"]
+resource_name = "fence"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("2_ad8wg")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6qic4"]
+_surfaces = [{
+"aabb": AABB(-1.3478377, -0.123215675, -0.020449266, 2.6956754, 1.6671605, 0.04000008),
+"format": 34896613377,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIAAwAFAAEABQACAAEAAwAGAAUABAACAAcACAAEAAcAAgAJAAcACAAHAAkAAgAFAAkACgAIAAkABgALAAUABgAKAAsACQAFAAsACgAJAAsADAANAA4ADgANAA8ADAAQAA0AEAAPAA0ADgAPABEAEgAQAAwAEgATABAAFAATABIAEQAPABUAEQAVABYADwAQABcAFwAQABMADwAXABUAFAAXABMAFgAVABcAFgAXABQA"),
+"name": "rusted_pipe",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("Wf4AAAAAAAD//////z8AAFn+//8AAAAA//8AAP8/AAC0/AAA/z8AAP//////vwAA//8AAP+/AAC0/P///z8AALT8AAD/vwAAtPz///+/AABZ/gAA//8AAFn+/////wAApQEAAAAAAAAAAP///z8AAAAAAAD/PwAAAAD///+/AAClAf//AAAAAAAAAAD/vwAASgMAAP8/AABKA////z8AAEoDAAD/vwAApQH/////AAClAQAA//8AAEoD////vwAA")
+}, {
+"aabb": AABB(-1.3383526, 0.1533925, -7.6108995e-09, 2.6767051, 1.2764738, 1e-05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "fence",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("I0+rv9wFtz8XwQIyI0+rP+wSHT4XwQKyI0+rP9wFtz8XwQIyI0+rv+wSHT4XwQKy")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_b373o"]
+resource_name = "metalfence_both_sides_no_topbar_Cylinder"
+_surfaces = [{
+"aabb": AABB(-1.3478377, -0.123215675, -0.020449266, 2.6956754, 1.6671605, 0.04000008),
+"attribute_data": PackedByteArray("AAAV9P//LOj+/xX0AAAs6AAALOj//0Lc//8s6AAAQtwAAELc//9Z0P//QtwAAFnQAABZ0P//b8T//1nQAABvxDE1kWKIMrNQMTWoVt8vkWKIMoZo3y+oVgAAb8T//4a4//9vxAAAhrgAAP///v8V9P7//v8AABX0//8VtAAALKj//yyoAAAVtP//LKgAAEKc//9CnAAALKj//0KcAABZkP//WZAAAEKc//9ZkAAAb4T//2+EAABZkMFvfUAla85Krmx9QMFvH1VKcc5KrmwfVf//b4QAAIZ4//+GeAAAb4T///+/AAAVtP//FbQAAP+/"),
+"format": 34896613399,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEQAQABMAEwAQABQAEQATABUAFgAXABgAFgAZABcAGgAbABwAGgAdABsAHgAfACAAHgAhAB8AIgAjACQAIgAlACMAJgAnACgAJgApACcAKgArACwAKgAtACsALgAvADAALwAuADEAMQAuADIALwAxADMANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkA"),
+"material": SubResource("StandardMaterial3D_7aah4"),
+"name": "rusted_pipe",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 60,
+"vertex_data": PackedByteArray("Wf4AAAAA//D//////z//8Fn+//8AAP/w//8AAP8///D//wAA/z9U1f//////v1TV//////8/VNX//wAA/79U1f//AAD/v7rCWf7/////usL//////7+6wln+AAD//7rCWf4AAP//usK0/P///7+6wln+/////7rCtPwAAP+/usL//////7//v1n+//8AAP+///////8//7+0/P///7//v1n+//////+/tPz///8//7+0/AAA/79U1bT8////P1TVtPz///+/VNW0/AAA/z9U1bT8AAD/P//wWf7//wAA//C0/P///z//8Fn+AAAAAP/wpQEAAAAA//AAAP///z//8AAAAAD/P//wpQH//wAA//AAAAAA/z9U1QAA////v1TVAAAAAP+/VNUAAP///z9U1QAAAAD/v7rCpQH/////usKlAQAA//+6wgAA////v7rCpQEAAP//usJKA////7+6wkoDAAD/v7rCpQH/////usKlAf//AAC6wgAA////v7rCAAD///8/usJKA////7+6wkoD////P7rCpQH/////usJKAwAA/79U1UoD////P1TVSgMAAP8/VNVKA////79U1UoDAAD/P//wpQH//wAA//ClAQAAAAD/8EoD////P//wcDhwOHA4cDhwOHA4cDhwOKoqqiqqKqoqqiqqKqoqqipUFlQWVBZUFlQWVBZUFlQWqumq6arpqumq6arpqumq6f7//3////9//v//f/7//3////9//v//f1TVVNVU1VTVVNVU1VTVVNWOx47HjseOx47HjseOx47Hj0dvuI9Hb7iPR2+4j0dvuFRVqapUVamqVFWpqlRVqaqqaVSWqmlUlqppVJaqaVSWVJaqaVSWqmlUlqppVJaqaarpVlOq6VZTqulWU6rpVlOq6VZTqulWU6qqVVWqqlVVqqpVVaqqVVVvuI9Hb7iPR2+4j0dvuI9H")
+}, {
+"aabb": AABB(-1.3383526, 0.1533925, -7.6108995e-09, 2.6767051, 1.2764738, 1e-05),
+"attribute_data": PackedByteArray("9haJvi6wxL96eKM/9nfEP+YWib74d8Q/dHijPzCwxL8="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_4klah"),
+"name": "fence",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("I0+rv9wFtz8XwQIyI0+rP+wSHT4XwQKyI0+rP9wFtz8XwQIyI0+rv+wSHT4XwQKy//////9/AID//////38AgP//////fwCA//////9/AIA=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_6qic4")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_av6y5"]
+size = Vector3(2.6956754, 1.6671605, 0.04000008)
+
+[node name="metalfence_both_sides_no_topbar2" type="StaticBody3D" unique_id=589094013]
+
+[node name="metalfence_both_sides_no_topbar" type="MeshInstance3D" parent="." unique_id=371613177]
+mesh = SubResource("ArrayMesh_b373o")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1801462134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7103646, -0.0004492253)
+shape = SubResource("BoxShape3D_av6y5")

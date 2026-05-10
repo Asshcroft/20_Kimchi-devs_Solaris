@@ -1,0 +1,706 @@
+[gd_scene format=3 uid="uid://cqehhukgauuol"]
+
+[ext_resource type="FontFile" uid="uid://divtovrhtu27m" path="res://Fonts/Audiowide-Regular.ttf" id="1_bxxpy"]
+[ext_resource type="Script" uid="uid://i6odqbh6f805" path="res://scripts/Character/interface.gd" id="1_o3bul"]
+[ext_resource type="Texture2D" uid="uid://cd3s3scoqwu0f" path="res://assets/UI/PC/indSocWhiteNoWordNoBG.png" id="2_o3bul"]
+[ext_resource type="Shader" uid="uid://cqgd31dpc4jmu" path="res://shaders/CRT.gdshader" id="3_ug0lv"]
+[ext_resource type="FontFile" uid="uid://cbmtw5n1dqehr" path="res://Fonts/Oxanium-Bold.ttf" id="4_ug0lv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yeold"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o3bul"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ug0lv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nrc5k"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bxxpy"]
+bg_color = Color(0.4862745, 0.8039216, 1, 0.101960786)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 30
+expand_margin_left = 100.0
+expand_margin_right = 100.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bxxpy"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_30gy3"]
+shader = ExtResource("3_ug0lv")
+shader_parameter/overlay = false
+shader_parameter/resolution = Vector2(1000, 1500)
+shader_parameter/brightness = 2.0
+shader_parameter/scanlines_opacity = 0.1210000057475
+shader_parameter/scanlines_width = 0.25
+shader_parameter/grille_opacity = 0.10000000475
+shader_parameter/roll = true
+shader_parameter/roll_speed = 8.0
+shader_parameter/roll_size = 15.0
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.05
+shader_parameter/aberration = 0.01000004797499998
+shader_parameter/noise_opacity = 0.10000000475
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/pixelate = true
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 0.050000002375
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
+
+[node name="Interface" type="Control" unique_id=1588974938]
+custom_minimum_size = Vector2(1000, 1500)
+layout_mode = 3
+anchor_right = 0.521
+anchor_bottom = 1.389
+offset_right = -0.32006836
+offset_bottom = -0.12011719
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o3bul")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=322805191]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_top = 20
+
+[node name="Menu" type="VBoxContainer" parent="MarginContainer" unique_id=1815377371]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 26
+alignment = 1
+
+[node name="separator" type="ColorRect" parent="MarginContainer/Menu" unique_id=1559364454]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="whitespace2" type="ColorRect" parent="MarginContainer/Menu" unique_id=1353956455]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="Races" type="Button" parent="MarginContainer/Menu" unique_id=1468940802]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yeold")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Races"
+metadata/target_menu = "Races"
+
+[node name="Tech" type="Button" parent="MarginContainer/Menu" unique_id=954653694]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 68
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Technologies"
+metadata/target_menu = "Tech"
+
+[node name="History" type="Button" parent="MarginContainer/Menu" unique_id=1630696297]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 57
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "History"
+metadata/target_menu = "History"
+
+[node name="Cosmos" type="Button" parent="MarginContainer/Menu" unique_id=832757767]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cosmos"
+metadata/target_menu = "Cosmos"
+
+[node name="Planets" type="Button" parent="MarginContainer/Menu" unique_id=1166322216]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Planets"
+metadata/target_menu = "Planets"
+
+[node name="Saved" type="Button" parent="MarginContainer/Menu" unique_id=1303626399]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 62
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Saved"
+metadata/target_menu = "Saved"
+
+[node name="whitespace" type="ColorRect" parent="MarginContainer/Menu" unique_id=1551496645]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="separator3" type="ColorRect" parent="MarginContainer/Menu" unique_id=2008889001]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="OS" type="Label" parent="MarginContainer/Menu" unique_id=121911466]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_bxxpy")
+theme_override_font_sizes/font_size = 36
+text = "Ind OS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Menu/OS" unique_id=381552212]
+layout_mode = 0
+offset_left = 576.99994
+offset_right = 1601.0
+offset_bottom = 715.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_o3bul")
+
+[node name="Races" type="VBoxContainer" parent="MarginContainer" unique_id=1552129330]
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="Module_name" type="Label" parent="MarginContainer/Races" unique_id=610919439]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bxxpy")
+theme_override_font_sizes/font_size = 46
+text = "Module: Races"
+horizontal_alignment = 1
+
+[node name="Page" type="Label" parent="MarginContainer/Races" unique_id=561672145]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bxxpy")
+theme_override_font_sizes/font_size = 46
+text = "<- 01/12 ->"
+horizontal_alignment = 1
+
+[node name="separator" type="ColorRect" parent="MarginContainer/Races" unique_id=1443837454]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="whitespace2" type="ColorRect" parent="MarginContainer/Races" unique_id=1340865954]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="whitespace" type="ColorRect" parent="MarginContainer/Races" unique_id=1329224320]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="separator3" type="ColorRect" parent="MarginContainer/Races" unique_id=626841609]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="OS" type="Label" parent="MarginContainer/Races" unique_id=69297549]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_bxxpy")
+theme_override_font_sizes/font_size = 36
+text = "Ind OS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Races/OS" unique_id=367456671]
+layout_mode = 0
+offset_left = 576.99994
+offset_right = 1601.0
+offset_bottom = 715.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_o3bul")
+
+[node name="Tech" type="VBoxContainer" parent="MarginContainer" unique_id=65323161]
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="separator" type="ColorRect" parent="MarginContainer/Tech" unique_id=1719798174]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="whitespace2" type="ColorRect" parent="MarginContainer/Tech" unique_id=1268812461]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="whitespace" type="ColorRect" parent="MarginContainer/Tech" unique_id=1460251707]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="separator3" type="ColorRect" parent="MarginContainer/Tech" unique_id=1111926441]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="OS" type="Label" parent="MarginContainer/Tech" unique_id=1352466814]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_bxxpy")
+theme_override_font_sizes/font_size = 36
+text = "Ind OS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Tech/OS" unique_id=1962257467]
+layout_mode = 0
+offset_left = 576.99994
+offset_right = 1601.0
+offset_bottom = 715.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_o3bul")
+
+[node name="History" type="VBoxContainer" parent="MarginContainer" unique_id=172526182]
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="separator" type="ColorRect" parent="MarginContainer/History" unique_id=815212207]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="whitespace2" type="ColorRect" parent="MarginContainer/History" unique_id=1843305416]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="whitespace" type="ColorRect" parent="MarginContainer/History" unique_id=127597999]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="separator3" type="ColorRect" parent="MarginContainer/History" unique_id=2011410509]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="OS" type="Label" parent="MarginContainer/History" unique_id=1372632834]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_bxxpy")
+theme_override_font_sizes/font_size = 36
+text = "Ind OS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/History/OS" unique_id=1273970385]
+layout_mode = 0
+offset_left = 576.99994
+offset_right = 1601.0
+offset_bottom = 715.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_o3bul")
+
+[node name="Cosmos" type="VBoxContainer" parent="MarginContainer" unique_id=559237284]
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="separator" type="ColorRect" parent="MarginContainer/Cosmos" unique_id=264871099]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="whitespace2" type="ColorRect" parent="MarginContainer/Cosmos" unique_id=1292231987]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="whitespace" type="ColorRect" parent="MarginContainer/Cosmos" unique_id=1479708755]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="separator3" type="ColorRect" parent="MarginContainer/Cosmos" unique_id=389176077]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="OS" type="Label" parent="MarginContainer/Cosmos" unique_id=2074736693]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_bxxpy")
+theme_override_font_sizes/font_size = 36
+text = "Ind OS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Cosmos/OS" unique_id=2088190618]
+layout_mode = 0
+offset_left = 576.99994
+offset_right = 1601.0
+offset_bottom = 715.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_o3bul")
+
+[node name="Planets" type="VBoxContainer" parent="MarginContainer" unique_id=1485883995]
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="Module_name" type="Label" parent="MarginContainer/Planets" unique_id=1074286007]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 46
+text = "Module: Planets"
+horizontal_alignment = 1
+
+[node name="Page" type="Label" parent="MarginContainer/Planets" unique_id=281107376]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bxxpy")
+theme_override_font_sizes/font_size = 46
+text = "<- 01/12 ->"
+horizontal_alignment = 1
+
+[node name="separator" type="ColorRect" parent="MarginContainer/Planets" unique_id=1807337345]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="whitespace2" type="ColorRect" parent="MarginContainer/Planets" unique_id=210760761]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="FirstPage" type="BoxContainer" parent="MarginContainer/Planets" unique_id=1864770832]
+layout_mode = 2
+vertical = true
+
+[node name="Krikket" type="Button" parent="MarginContainer/Planets/FirstPage" unique_id=938647983]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="Krikket2" type="Button" parent="MarginContainer/Planets/FirstPage" unique_id=2115205420]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="Krikket3" type="Button" parent="MarginContainer/Planets/FirstPage" unique_id=800775571]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="Krikket4" type="Button" parent="MarginContainer/Planets/FirstPage" unique_id=1263263894]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="Krikket5" type="Button" parent="MarginContainer/Planets/FirstPage" unique_id=897437292]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="Krikket6" type="Button" parent="MarginContainer/Planets/FirstPage" unique_id=637889142]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="SecondPage" type="BoxContainer" parent="MarginContainer/Planets" unique_id=1670550284]
+visible = false
+layout_mode = 2
+vertical = true
+
+[node name="Krikket" type="Button" parent="MarginContainer/Planets/SecondPage" unique_id=2020949122]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Not a Cricket
+"
+metadata/target_menu = "Planets"
+
+[node name="Krikket2" type="Button" parent="MarginContainer/Planets/SecondPage" unique_id=316040561]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="Krikket3" type="Button" parent="MarginContainer/Planets/SecondPage" unique_id=695187132]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="Krikket4" type="Button" parent="MarginContainer/Planets/SecondPage" unique_id=883146065]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="Krikket5" type="Button" parent="MarginContainer/Planets/SecondPage" unique_id=1666189475]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="Krikket6" type="Button" parent="MarginContainer/Planets/SecondPage" unique_id=1164301523]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("4_ug0lv")
+theme_override_font_sizes/font_size = 86
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxxpy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o3bul")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ug0lv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nrc5k")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bxxpy")
+text = "Cricket"
+metadata/target_menu = "Planets"
+
+[node name="whitespace" type="ColorRect" parent="MarginContainer/Planets" unique_id=357072317]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="separator3" type="ColorRect" parent="MarginContainer/Planets" unique_id=535352925]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="OS" type="Label" parent="MarginContainer/Planets" unique_id=463765249]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_bxxpy")
+theme_override_font_sizes/font_size = 36
+text = "Ind OS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Planets/OS" unique_id=692689622]
+layout_mode = 0
+offset_left = 576.99994
+offset_right = 1601.0
+offset_bottom = 715.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_o3bul")
+
+[node name="Saved" type="VBoxContainer" parent="MarginContainer" unique_id=2048518529]
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="separator" type="ColorRect" parent="MarginContainer/Saved" unique_id=709256412]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="whitespace2" type="ColorRect" parent="MarginContainer/Saved" unique_id=1589517147]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="whitespace" type="ColorRect" parent="MarginContainer/Saved" unique_id=195967674]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(1, 1, 1, 0)
+
+[node name="separator3" type="ColorRect" parent="MarginContainer/Saved" unique_id=1156573228]
+custom_minimum_size = Vector2(800, 5)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="OS" type="Label" parent="MarginContainer/Saved" unique_id=1756440359]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_bxxpy")
+theme_override_font_sizes/font_size = 36
+text = "Ind OS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Saved/OS" unique_id=1824947484]
+layout_mode = 0
+offset_left = 576.99994
+offset_right = 1601.0
+offset_bottom = 715.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_o3bul")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=831371898]
+material = SubResource("ShaderMaterial_30gy3")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

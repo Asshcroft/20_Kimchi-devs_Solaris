@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dtfwxnh1c4vrx"]
+
+[ext_resource type="Texture2D" uid="uid://gpmdjxfgjl3" path="res://assets/structures/Industrial_exterior/Industrial_exterior_v2 (1)_Asphalt_1-4.png" id="1_4cqw6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j4luw"]
+resource_name = "Alphalt_Floor"
+cull_mode = 2
+albedo_texture = ExtResource("1_4cqw6")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_663if"]
+_surfaces = [{
+"aabb": AABB(-8, 0, -8, 16, 1e-05, 16),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"name": "Alphalt_Floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_017sm"]
+resource_name = "Industrial_exterior_v2 (1)_Alphalt_Floor"
+_surfaces = [{
+"aabb": AABB(-8, 0, -8, 16, 1e-05, 16),
+"attribute_data": PackedByteArray(0, 0, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"material": SubResource("StandardMaterial3D_j4luw"),
+"name": "Alphalt_Floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 255, 255, 255, 191, 255, 255, 0, 0, 0, 0, 255, 191, 255, 255, 0, 0, 255, 255, 255, 191, 0, 0, 0, 0, 0, 0, 255, 191, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_663if")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cqw6"]
+size = Vector3(16, 0.001, 16)
+
+[node name="Alphalt_Floor" type="StaticBody3D" unique_id=6994965]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=841843975]
+mesh = SubResource("ArrayMesh_017sm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=236116362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5e-06, 0)
+shape = SubResource("BoxShape3D_4cqw6")

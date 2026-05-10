@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://3pdhfexv0gjc"
+path="res://.godot/imported/first_teleported_dialogue.dialogue-379a4b61a68a00a910e8b5c5a1b7af87.tres"
+
+[deps]
+
+source_file="res://dialogues/first_teleported_dialogue.dialogue"
+dest_files=["res://.godot/imported/first_teleported_dialogue.dialogue-379a4b61a68a00a910e8b5c5a1b7af87.tres"]
+
+[params]
+
+defaults=true

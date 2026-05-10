@@ -1,0 +1,57 @@
+[gd_scene format=4 uid="uid://dmmo6wcm7wxiq"]
+
+[ext_resource type="Texture2D" uid="uid://c3qxweut6wxf5" path="res://assets/structures/Industrial_exterior/Industrial_exterior_v2 (1)_Bridges.png" id="1_jgx8v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2a8f2"]
+resource_name = "Bridges_support_3"
+cull_mode = 2
+albedo_texture = ExtResource("1_jgx8v")
+metallic = 1.0
+roughness = 0.8585786
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_p435b"]
+_surfaces = [{
+"aabb": AABB(-0.4162464, -0.03365962, -0.3929907, 0.8597107, 5.1747828, 0.8538666),
+"format": 34896613377,
+"index_count": 54,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIAAQADAAUABAACAAYABQAEAAYAAQAFAAcABQAGAAcACAAJAAoACQALAAoADAAKAAsADAAIAAoACQANAAsACAAMAA4ADQAJAA8ACAAPAAkADQAPAA4ACAAOAA8A"),
+"lods": [0.6253879, PackedByteArray("AAABAAIAAAADAAEABAAAAAIAAQADAAUABAACAAYABQAEAAYAAQAFAAcABQAGAAcA")],
+"name": "Bridges_support_3",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("52yRDAolAAAYk///CiUAAOds/v8KJQAAGJORDAslAADnbJEMM9YAABiTkQwz1gAA52z+/zLWAAAYk/7/MtYAAAAAygwAAAAA///KDP//AAAAAMoM//8AAAAAAAD//wAAAAAAAAAAAAD//wAA//8AAP//AAAAAAAA///KDAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xecvn"]
+resource_name = "Industrial_exterior_v2 (1)_Bridges_support_1"
+_surfaces = [{
+"aabb": AABB(-0.4162464, -0.03365962, -0.3929907, 0.8597107, 5.1747828, 0.8538666),
+"attribute_data": PackedByteArray("KXH//2VrAAApcQAAZWv//2iS//8pcQAAaJIAAClx//+Omf//aJIAAI2ZAABokv//KXEAAGiS//9okgAAKXH///aqGpWRzMy29qrMtpHMGpX+mhqV9qrMtv6azLb2qhqV4NzMtpHMGpXg3BqVkczMtvaqGpWRzKyDkcwalfaqrIORzMy29qoAx/aqzLaRzADH"),
+"format": 34896613399,
+"index_count": 54,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEA"),
+"lods": [0.6253879, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A")],
+"material": SubResource("StandardMaterial3D_2a8f2"),
+"name": "Bridges_support_3",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("52yRDAol//8Yk///CiX//+ds/v8KJf//GJORDAsl///nbJEMM9b/v+ds/v8KJf+/52z+/zLW/7/nbJEMCiX/vxiTkQwz1gCA52z+/zLWAIAYk/7/MtYAgOdskQwz1gCAGJP//wolAAAYk5EMM9YAABiT/v8y1gAAGJORDAslAAAAAMoMAAD/v///ygz///+/AADKDP///7///8oMAAD/vwAAAAAAAFTVAADKDP//VNUAAAAA//9U1QAAygwAAFTV//8AAP//VNX//8oMAABU1f//AAAAAFTV///KDP//VNUAAMoMAAD/////AAAAAP/////KDAAA//8AAAAAAAD/////ygz//wCAAAAAAP//AIAAAMoM//8AgP//AAD//wCA/3/+//9//v//f/7//3/+//9/////f////3////9//////////3////9//////////7//f/+//3//v/9//7//f////3////9/////f////39U1VTVVNVU1VTVVNVU1VTVqqpVVaqqVVWqqlVVqqpUVf7//3/+//9/////f/7//3//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_p435b")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jgx8v"]
+size = Vector3(0.8392334, 5.0549927, 0.8154297)
+
+[node name="Bridges_support_1" type="StaticBody3D" unique_id=565070216]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=460622437]
+mesh = SubResource("ArrayMesh_xecvn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=619262548]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.027160645, 2.5864348, 0)
+shape = SubResource("BoxShape3D_jgx8v")

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" format=3 uid="uid://dyva3cqomamis"]
+
+[ext_resource type="PackedScene" uid="uid://ci4rshbyavuto" path="res://scenes/hands/fire_projectile.tscn" id="1_akxka"]
+[ext_resource type="Script" uid="uid://d3us6njg3fxol" path="res://scripts/weapon/weapon_resource.gd" id="1_dhfw1"]
+[ext_resource type="PackedScene" uid="uid://dhuf3xy5x1kg3" path="res://scenes/hands/Firegun.tscn" id="2_akxka"]
+
+[resource]
+script = ExtResource("1_dhfw1")
+Weapon_Name = "Firegun"
+Activate_Anim = "firegun_draw"
+Shoot_Anim = "firegun_attack"
+Reload_Anim = "firegun_recharge"
+Deactivate_Anim = "firegun_deactivate"
+Out_Of_Ammo_Anim = "firegun_outofammo"
+Idle_Anim = "firegun_hold"
+Current_Ammo = 100
+Reserve_Ammo = 1000
+Magazine = 100
+Max_Ammo = 300
+Auto_Fire = true
+Weapon_Range = 2000
+Damage = 15
+Type = 2
+Projectile_To_Load = ExtResource("1_akxka")
+Projectile_Velocity = 15
+Weapon_Drop = ExtResource("2_akxka")
+metadata/_custom_type_script = "uid://d3us6njg3fxol"

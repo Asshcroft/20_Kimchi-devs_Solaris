@@ -1,0 +1,55 @@
+[gd_scene format=4 uid="uid://ddxrpunbrrynw"]
+
+[ext_resource type="Texture2D" uid="uid://uxcjfgnjv58x" path="res://assets/structures/Industrial_exterior/Industrial_exterior_v2 (1)_Metal_cabinet_2.png" id="1_lu7tc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2i78"]
+resource_name = "Metal_cabinet_2"
+cull_mode = 2
+albedo_texture = ExtResource("1_lu7tc")
+metallic = 1.0
+roughness = 0.8585786
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hdygm"]
+_surfaces = [{
+"aabb": AABB(-0.5896907, -0.018376956, -0.19978671, 1.1793813, 1.9900756, 0.39957318),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAACAAQAAwAEAAIAAAAFAAEABQADAAEAAAAEAAYABgAEAAMAAAAHAAUAAAAGAAcABQAHAAMABgADAAcA"),
+"name": "Metal_cabinet_2",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD///7/AAAAAAAAAAAAAAAA//8AAAAA/v8AAAAAAAD+//7/AAAAAAAAAAD//wAA/v/+//7/AAD//wAA//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ajroc"]
+resource_name = "Industrial_exterior_v2 (1)_Metal_cabinet_2"
+_surfaces = [{
+"aabb": AABB(-0.5896907, -0.018376956, -0.19978671, 1.1793813, 1.9900756, 0.39957318),
+"attribute_data": PackedByteArray("r5Ya/b3hHwO94Rr9r5YfAzEBKQPAlRb9MQEW/cCVKQOvlhr9veEfA6+WHwO94Rr95+Ilmi//MP3n4jD9L/8lmuJq+/2JvyNvib/7/eJqI29QJBfh93jF/VAkxf33eBfh"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_y2i78"),
+"name": "Metal_cabinet_2",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD///7///8AAAAAAAD//wAA//8AAP//AAAAAP////8AAP///v8AgP//AAD//wCAAAAAAP//AID+//7//v8AgP7//v/+//8//v8AAAAA/z///wAA////P/7//v8AAP8/AAD///7/VNX+//7/AABU1f7//v/+/1TVAAD//wAAVNX+/wAAAAD//wAA//8AAP//AAAAAAAA///+//7/AAD//wAAAAD///+//v8AAAAA/78AAAAAAAD/v///AAD///+//z//f/8//3//P/9//z//f/9/////f////3////9/////fwAA/38AAP9/AAD/fwAAVNWqKlTVqipU1aoqVNWqKv9/////f/7//3////9//v8AAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_hdygm")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lu7tc"]
+size = Vector3(1.1793813, 1.9900756, 0.39957318)
+
+[node name="Metal_cabinet_2" type="StaticBody3D" unique_id=2122728290]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=932002410]
+mesh = SubResource("ArrayMesh_ajroc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1918442560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9604645e-08, 0.97666085, -1.1920929e-07)
+shape = SubResource("BoxShape3D_lu7tc")

@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cjob0qyp2cdsr"]
+
+[ext_resource type="Script" uid="uid://cp3kfhjxcn0kj" path="res://scripts/game/menu.gd" id="1_0chow"]
+[ext_resource type="FontFile" uid="uid://cbmtw5n1dqehr" path="res://Fonts/Oxanium-Bold.ttf" id="1_bc20i"]
+[ext_resource type="FontFile" uid="uid://bmhelyrfiq0xf" path="res://Fonts/Oxanium-Regular.ttf" id="2_0chow"]
+[ext_resource type="AudioStream" uid="uid://b8omt3dhv70vl" path="res://sounds/button_pressed.mp3" id="4_mfk67"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mfk67"]
+shadow_color = Color(0, 0, 0, 0.78431374)
+
+[node name="Menu" type="Control" unique_id=615729851 node_paths=PackedStringArray("select_sound")]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_0chow")
+select_sound = NodePath("AudioStreamPlayer")
+
+[node name="Label" type="Label" parent="." unique_id=70970505]
+layout_mode = 1
+offset_left = 75.0
+offset_top = 292.0
+offset_right = 764.0
+offset_bottom = 463.0
+theme_override_fonts/font = ExtResource("1_bc20i")
+theme_override_font_sizes/font_size = 170
+text = "SOLARIS"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1560982518]
+layout_mode = 1
+offset_left = 218.0
+offset_top = 530.0
+offset_right = 584.0
+offset_bottom = 818.0
+mouse_filter = 2
+theme_override_constants/separation = 11
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=563660417]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.46099466, 0.46099484, 0.4609958, 1)
+theme_override_fonts/font = ExtResource("2_0chow")
+theme_override_font_sizes/font_size = 120
+theme_override_styles/hover = SubResource("StyleBoxFlat_mfk67")
+text = "START"
+flat = true
+
+[node name="Exit" type="Button" parent="VBoxContainer" unique_id=1350819272]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.46099466, 0.46099484, 0.4609958, 1)
+theme_override_fonts/font = ExtResource("2_0chow")
+theme_override_font_sizes/font_size = 120
+theme_override_styles/hover = SubResource("StyleBoxFlat_mfk67")
+text = "EXIT"
+flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=527063669]
+stream = ExtResource("4_mfk67")
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

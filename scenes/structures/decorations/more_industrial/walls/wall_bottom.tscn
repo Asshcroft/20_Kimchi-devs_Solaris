@@ -1,0 +1,118 @@
+[gd_scene format=4 uid="uid://cr0pvjbti45o5"]
+
+[ext_resource type="Texture2D" uid="uid://bny3fahproixf" path="res://assets/structures/more_industry/factory_modular_kit_0.jpg" id="1_dcsra"]
+[ext_resource type="Texture2D" uid="uid://dv5m6suu0ufi6" path="res://assets/structures/more_industry/factory_modular_kit_1.png" id="2_dckw4"]
+[ext_resource type="Texture2D" uid="uid://keyoyqi2lb2c" path="res://assets/structures/more_industry/factory_modular_kit_2.png" id="3_5gb5v"]
+[ext_resource type="Texture2D" uid="uid://c42iapbyob32i" path="res://assets/structures/more_industry/factory_modular_kit_3.jpg" id="4_s8dxd"]
+[ext_resource type="Texture2D" uid="uid://cypuq3rdr78ml" path="res://assets/structures/more_industry/factory_modular_kit_4.png" id="5_1l4ts"]
+[ext_resource type="Texture2D" uid="uid://dn6tr0byrps2e" path="res://assets/structures/more_industry/factory_modular_kit_5.png" id="6_k26ms"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mmnpy"]
+resource_name = "bricks"
+cull_mode = 2
+albedo_texture = ExtResource("1_dcsra")
+metallic_texture = ExtResource("2_dckw4")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_dckw4")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_5gb5v")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xlxot"]
+_surfaces = [{
+"aabb": AABB(-0.09885311, -1.25, -1.25, 0.12481141, 2.5, 2.5),
+"format": 34896654337,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgABAAMABAABAAAABAADAAEAAAACAAUABAAAAAUAAgADAAYABgADAAQABQACAAYABgAEAAcABAAFAAcABQAGAAcA"),
+"name": "bricks",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD//wAAAAD/////AAAAAP///////wAA/v8AAAAAAAAAAAAAAAAAAAAA/////wAA/v8AAP//AAAAAAAA//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ycumo"]
+resource_name = "Sketchfab_Scene_Factory_modularKit_01_bricks_0"
+_surfaces = [{
+"aabb": AABB(-0.09885311, -1.25, -1.25, 0.12481141, 2.5, 2.5),
+"attribute_data": PackedByteArray("m3n//5t5//8mOPM+AACAP2OG//9jhv//7mMGPwAAgD9jhgAAY4YAAO5jBj8AAAAAm3kAAJt5AAAmOPM+AAAAAJt5AACbeQAAJDjzPgAAAABjhgAAY4YAAO1jBj8AAAAAY4b//2OG///uYwY/AACAP5t5//+bef//JjjzPgAAgD///wAA//8AAAAAgD8AAAAA//////////8AAIA/AACAPwAA//8AAP//AAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAm3n//5t5//8mOPM+AACAP2OG//9jhv//7mMGPwAAgD9jhgAAY4YAAO1jBj8AAAAAm3kAAJt5AAAkOPM+AAAAAAAA//8AAP//AAAAAAAAgD///////////wAAgD8AAIA///8AAP//AAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAAABjhgAAY4YAAO1jBj8AAAAAY4b//2OG///tYwY/AACAP5t5//+bef//JDjzPgAAgD+beQAAm3kAACQ48z4AAAAA"),
+"format": 34896654455,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcA"),
+"material": SubResource("StandardMaterial3D_mmnpy"),
+"name": "bricks",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD//wAA/7//////AAD/v/////////+/AAD//////78AAAAAAAAAAP7/AAAAAAAA/////wAAAAAAAP//AAAAAAAAAAAAAAAAAAD//wAAAAAAAP////8AAAAAAAD//wAAAAD/////AID///////8AgP7/AAD//wCAAAAAAP//AID/////////v/////8AAP+//v8AAAAA/7/+/wAA////v/7/AAD///8//v8AAAAA/z8AAAAAAAD/PwAAAAD///8/////f////3////9/////f////3////9/////f////3//P/9//z//f/8//3//P/9//3////9/////f////3////9/AAD/fwAA/38AAP9/AAAAAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_xlxot")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dcsra"]
+size = Vector3(0.12481141, 2.5, 2.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ocij6"]
+resource_name = "concrete"
+cull_mode = 2
+albedo_texture = ExtResource("4_s8dxd")
+metallic_texture = ExtResource("5_1l4ts")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("5_1l4ts")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("6_k26ms")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_a3t6i"]
+_surfaces = [{
+"aabb": AABB(0.0259583, -1.25, -1.25, 0.07289481, 0.46753538, 2.5),
+"format": 34896654337,
+"index_count": 42,
+"index_data": PackedByteArray("AAABAAIAAAACAAMAAwAEAAAAAgAEAAMAAAAEAAUAAQAGAAIAAgAGAAQABwAGAAEABQAEAAgACAAHAAUABAAGAAkABAAJAAgACQAGAAcACAAJAAcA"),
+"name": "concrete",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 10,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAAAAAAD//2XzAAAAAAAA//8AAAAA//9l8///AAAAAP////8AAEyv//8AAAAATK//////AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ev6ds"]
+resource_name = "Sketchfab_Scene_Factory_modularKit_01_concrete_0"
+_surfaces = [{
+"aabb": AABB(0.0259583, -1.25, -1.25, 0.07289481, 0.46753538, 2.5),
+"attribute_data": PackedByteArray("RHz//0R8//8bifg+AACAP0R8AABEfAAAG4n4PgAAAAC6gwAAuoMAAHO7Az8AAAAAuoP//7qD//9zuwM/AACAP0R8D2hEfA9oG4n4PtYf0D66g5SVuoOUlXO7Az/OlBU/uoMPaLqDD2hzuwM/1h/QPkR875dEfO+XG4n4PhTwFz9gge+XYIHvlxVhAT8U8Bc/AAAPaAAAD2gAAAAA1h/QPgAAlJUAAJSVAAAAAM6UFT///5SV//+UlQAAgD/OlBU///8PaP//D2gAAIA/1h/QPkR875dEfO+XG4n4PhTwFz+6g5SVuoOUlXO7Az/OlBU/YIHvl2CB75cVYQE/FPAXP0R8D2hEfA9oG4n4PtYf0D66gw9ouoMPaHO7Az/WH9A+//+Ulf//lJUAAIA/zpQVPwAAlJUAAJSVAAAAAM6UFT8AAO+XAADvlwAAAAAU8Bc////vl///75cAAIA/FPAXP///75f//++XAACAPxTwFz8AAO+XAADvlwAAAAAU8Bc/AAALnQAAC50AAAAAmwwdP///C53//wudAACAP5wMHT8="),
+"format": 34896654455,
+"index_count": 42,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABwAFAAQACAAFAAcACQAKAAsACQALAAwADQAOAA8AEAAOAA0AEQAOABAAEgATABQAEgAUABUAFgAXABgAFgAYABkA"),
+"material": SubResource("StandardMaterial3D_ocij6"),
+"name": "concrete",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 26,
+"vertex_data": PackedByteArray("AAAAAAAA/z8AAAAA////P///AAD///8///8AAAAA/z8AAAAA//8AgP//ZfP//wCA//8AAP//AIAAAP////8AgEyv/////wCA//8AAP///7///2Xz////v///ZfMAAP+///8AAAAA/78AAP//AAAAAP//ZfMAAAAATK///wAAAAAAAAAAAAAAAP//AAAAAAAA//9l8wAA+cX//2Xz///5xUyv//////nFTK///wAA+cVMr///AABU1Uyv/////1TVAAD/////VNUAAP//AABU1QAA/38AAP9/AAD/fwAA/3//f////3////9/////f////3////9/AAD/fwAA/38AAP9/AAD+//9//v//f////3/+//9/////f/W5+hz1ufoc9bn6HPW5+hxU1aoqVNWqKlTVqipU1aoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_a3t6i")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dckw4"]
+size = Vector3(0.07289481, 0.46753538, 2.5)
+
+[node name="Factory_modularKit_01" type="StaticBody3D" unique_id=1454960700]
+
+[node name="Factory_modularKit_01_bricks_0" type="MeshInstance3D" parent="." unique_id=66480635]
+mesh = SubResource("ArrayMesh_ycumo")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=950945467]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.036447406, 0, 0)
+shape = SubResource("BoxShape3D_dcsra")
+
+[node name="Factory_modularKit_01_concrete_0" type="MeshInstance3D" parent="." unique_id=347407876]
+mesh = SubResource("ArrayMesh_ev6ds")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=2052457876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.062405705, -1.0162323, 0)
+shape = SubResource("BoxShape3D_dckw4")

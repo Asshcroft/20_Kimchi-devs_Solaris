@@ -1,0 +1,54 @@
+[gd_scene format=4 uid="uid://ccmkrd62t8la2"]
+
+[ext_resource type="Texture2D" uid="uid://btki02lj4jp5r" path="res://assets/structures/Office/book_stuff/file_binder_file_binder.jpg" id="1_7xhx0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ntvct"]
+resource_name = "Binders"
+cull_mode = 2
+albedo_texture = ExtResource("1_7xhx0")
+metallic = 0.69430053
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_p3ngg"]
+_surfaces = [{
+"aabb": AABB(-0.046483852, 0, -0.15027659, 0.092967704, 0.4243231, 0.30055317),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABQABAAMABQADAAQABgABAAUABgACAAEABwAGAAUABAAHAAUACAACAAYABwAIAAYABAAAAAkACAAKAAIABwAKAAgACwAAAAIACQAAAAsACwACAAoABAAJAAwACQALAAwABAANAAcABAAMAA0ABwAOAAoADQAOAAcADwALAAoADAALAA8ADwAKAA4ADAAPAA0ADQAPAA4A"),
+"name": "Binders",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("JgUAAAr9AAD4Vub/6wEAAAAA3P71/gAAHlwKAQAAAACTbpoGYgAAAKdpX/o4AgAAvhRa+UH5AAA6p276eQIAANHmjvkf+gAAqxmWBWv3AADY+hn///8AAP//PQAT/gAAvuvKBUn4AAAmrKkGowAAALW5//9TAgAA274iAWgAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cguvw"]
+resource_name = "file_binder_Cube_006"
+_surfaces = [{
+"aabb": AABB(-0.046483852, 0, -0.15027659, 0.092967704, 0.4243231, 0.30055317),
+"attribute_data": PackedByteArray("qg5eWQ03dwiqDncIDTdeWWcD0W2tOId8rTjRbWcDh3ypODZnFQFKAKk4SgAVATZnDlSveMo8dQAOVHUAyjyveN82ZHJRA8N93zaMd1EDLWyANvh3KwHpboA23HMrAex8XyNCEPwbHVCUHapO7CExEJQdqk7sITEQXyNCEPwbHVBfI2UH7CExYF8jOF7sIWsFLSg4XqEpawUtKGUHoSkxYPktqk6hKTEQLShCEJAvHVAtKEIQkC8dUPktqk6hKTEQlB2qTpAvHVD5LapO/BsdUPktqk78Gx1QlB2qTpAvHVA="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUA"),
+"material": SubResource("StandardMaterial3D_ntvct"),
+"name": "Binders",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 56,
+"vertex_data": PackedByteArray("JgUAAAr9CgD4Vub/6wEKAAAA3P71/goAHlwKAQAACgCTbpoGYgA6ADqnbvp5AjoAp2lf+jgCOgAmrKkGowA6ANu+IgFoADrD2PoZ////OsO1uf//UwI6w///PQAT/jrD//89ABP+nIAAANz+9f6cgNj6Gf///5yAJgUAAAr9nICTbpoGYgD0Kr7rygVJ+PQqJqypBqMA9CqrGZYFa/f0Kjqnbvp5Av7UvhRa+UH5/tSnaV/6OAL+1NHmjvkf+v7Uk26aBmIAFDomBQAACv0UOqsZlgVr9xQ6HlwKAQAAFDq+FFr5QfloxfhW5v/rAWjFp2lf+jgCaMUAANz+9f5oxadpX/o4AjkAHlwKAQAAOACTbpoGYgA5APhW5v/rATkAJqypBqMANgC1uf//UwI2ADqnbvp5AjYA274iAWgANgC+68oFSfjLOdu+IgFoAMs5JqypBqMAyzn//z0AE/7LOTqnbvp5AgHG2PoZ////AcbR5o75H/oBxrW5//9TAgHGqxmWBWv3kxn//z0AE/6TGb7rygVJ+JMZJgUAAAr9kxnR5o75H/r75QAA3P71/vvlvhRa+UH5++XY+hn////75bD/xLyw/8S8sP/EvLD/xLzXP48/1z+PP9c/jz/XP48/XX8IAF1/CABdfwgAXX8IANhJM+LYSTPi2Ekz4thJM+LwVFJV8FRSVfBUUlXwVFJVuNUIK7jVCCu41QgruNUIKx0fRT4dH0U+HR9FPh0fRT5tvshgbb7JYG2+yWBtvshgB/xDgAf8Q4AH/EOAB/xDgLb/WoK2/1qCtv9agrb/WoItQbafLUG2ny1Btp8tQbaf2N+3wdjft8HY37fB2N+3wQAADn8AAA5/AAAOfwAADn+v/o2Ar/6NgK/+jYCv/o2A")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_p3ngg")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wi8xr"]
+points = PackedVector3Array(0.030943677, -0.0033674538, -0.13344027, -0.028320175, 0.4181744, 0.14931576, -0.022920525, 0.42766744, -0.14017256, -0.04986746, -0.0033674538, 0.14934596, 0.05115635, -0.0033674538, 0.14937629, 0.030943677, 0.42766744, -0.11324342, -0.016186263, -0.0033674538, -0.15366745, -0.04986746, 0.42766744, 0.11568455, 0.05115635, 0.42766744, 0.15610857, 0.021831173, 0.40599817, -0.13809267, -0.022920525, -0.0033674538, -0.12670799, 0.05115635, 0.010134026, 0.11571487, -0.04986746, 0.097682714, 0.12241683, 0.023062086, 0.007039576, -0.1461874, 0.05115635, 0.42766744, 0.142644, -0.044921145, 0.40656316, 0.13484246, -0.015213917, 0.41521654, -0.14471836, 0.030943677, 0.090931974, -0.13344027, -0.04312331, 0.39395592, 0.048331384, -0.04986746, -0.0033674538, 0.12914911, -0.022920525, 0.35353583, -0.14017256, 0.05115635, -0.0033674538, 0.11571487, 0.05115635, 0.34007657, 0.13591172, -0.04986746, 0.27948865, 0.11568455, 0.037677936, 0.030344069, -0.052622546, -0.04312331, 0.023593321, 0.06179595, 0.030943677, 0.31986654, -0.11997571, -0.04312331, 0.42766744, 0.048331384, 0.05115635, 0.124601305, 0.122447155, 0.0444122, 0.4074574, 0.05506367, 0.037677936, -0.0033674538, -0.052622546, -0.022920525, 0.17181431, -0.13344027)
+
+[node name="file_binder2" type="StaticBody3D" unique_id=1451162179]
+
+[node name="file_binder" type="MeshInstance3D" parent="." unique_id=1527174166]
+mesh = SubResource("ArrayMesh_cguvw")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1810653995]
+shape = SubResource("ConvexPolygonShape3D_wi8xr")

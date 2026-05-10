@@ -1,0 +1,57 @@
+[gd_scene format=4 uid="uid://cd5rmm1ut5cv4"]
+
+[ext_resource type="Texture2D" uid="uid://deh7m7ocbgiue" path="res://assets/structures/all_fences/wooden/wooden_fence_pole_low_wooden_wall.jpg" id="1_18h2b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jyd6s"]
+resource_name = "low_wooden_wall"
+cull_mode = 2
+albedo_texture = ExtResource("1_18h2b")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pfapn"]
+_surfaces = [{
+"aabb": AABB(-0.12697677, 0.0041495115, -0.11447981, 0.24883214, 1.1988951, 0.23699725),
+"format": 34896613377,
+"index_count": 108,
+"index_data": PackedByteArray("DwACAAAAAwAAAAIAAwAEAAAAAQADAAIADwABAAIABQAEAAMAAQAFAAMABgAAAAQABgAPAAAABQAGAAQABwABAA8ACAAFAAEABwAIAAEACAAQAAUAEAAGAAUAEQAPAAYAEAARAAYAEQAHAA8AEgAQAAgAEwARABAAEgATABAAEwAKABEACgAHABEACwAIAAcACgALAAcACwASAAgACQAKABMADgASAAsADQALAAoADQAOAAsACQANAAoADgAMABIADAATABIADAAOAA0ADAAJABMADAANAAkA"),
+"lods": [0.051313624, PackedByteArray("AAABAAIAAQADAAIAAwAAAAIAAwAEAAAAAQAFAAMABQAEAAMABgAAAAQABQAGAAQABgAHAAAABwABAAAACAAFAAEABwAIAAEACQAGAAUACAAJAAUACgAHAAYACQAKAAYACwAIAAcACgALAAcADAAJAAgACQANAAoADAANAAkADQALAAoADgAMAAgADAAOAA0ADgAIAAsADQAOAAsA")],
+"name": "low_wooden_wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("oYL//1vmAAAAACe1sHsAAAId//+oewAAoYL///UQAABB6P//qHsAAHR3KsWJEQAAhNwtxah7AADYfmx99OEAAAQfToG3ewAAoYIAAIEgAAD//85BK3oAAIiAzkH//wAA0CsAAKh7AABz2QAAqHsAAKGCAADP1gAAdHcqxcflAAANbdmi/xkAAM3OJZ23ewAAghFDUyt6AACtYk1UAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_aidnh"]
+resource_name = "wooden_fence_pole_Cube_054"
+_surfaces = [{
+"aabb": AABB(-0.12697677, 0.0041495115, -0.11447981, 0.24883214, 1.1988951, 0.23699725),
+"attribute_data": PackedByteArray("///CneTQton//zmJPKv/nMGtoYnk0LaJ///Cnf//OYlT2PmaU9herP//wp3//0yyVdjCnVXYwp3//zmJ///CnTyrEooRhsKdEYaUiuesN4znrE6vmrjCnTWhwp3w03b99r4Q40DSiOCmwP//0FlOrxGGwp0RhvGw0FnCndBZwp3QWU6vEYbxsFXYk6lT2Pma0FnCndBZTq/Brb+dU9herOTQwZ3QWTeMwa2/nRGGlIo8qxKK0FnCnVPY+Zrk0LaJU9gnj9O/v53Tv7+dU9gnj1XYwp08qxKKAo9EmQKPRJnTvyeth8NmmRGG8bCHw2aZ078nrQKPRa+BjsKdgY7CnYfDj7DBrb+dAo9Fr4fDj7CBjsKdEYaUioGOwp1T2Pma"),
+"format": 34896613399,
+"index_count": 108,
+"index_data": PackedByteArray("LgACAAAALgAvAAIABQAGAAcABQAIAAYACQAKAAsACQAMAAoADQAOAA8ADQAwAA4AEwAUABUAEwAWABQAFwAYABkAFwAaABgAGwAcAB0AGwAeABwAEQAQADEAEQASABAAMgAzADQAMgA1ADMAHwAhADYAHwAgACEANwA4ADkANwA6ADgAOwAiACMAOwA8ACIAJAA9AD4AJAAlAD0APwBAAEEAPwBCAEAAJgAnACgAJgBDACcAKQBEAEUAKQAtAEQAKwAqACwAKwBGACoAAwABAEcAAwAEAAEA"),
+"lods": [0.051313624, PackedByteArray("AAABAAIAAwABAAAAAwAEAAEABQAGAAcABQAIAAYACQAKAAsACQAMAAoADQAOAA8ADQAQAA4AEQAQAA0AEQASABAAEwAUABUAEwAWABQAFwAYABkAFwAaABgAGwAcAB0AGwAeABwAHwAgACEAHwAhACIAHwAiACMAJAAlACYAJgAlACcAJgAnACgAKQAqACsAKwAqACwAKQAtACoA")],
+"material": SubResource("StandardMaterial3D_jyd6s"),
+"name": "low_wooden_wall",
+"primitive": 3,
+"uv_scale": Vector4(2.8724928, 1.9150707, 0, 0),
+"vertex_count": 72,
+"vertex_data": PackedByteArray("oYL//1vmUcYAACe1sHuHxQId//+oex/F2H5sffThgscEH06Bt3tUyQAAJ7Wwe8IWoYL///UQOhYCHf//qHvfFXR3KsWJETkXdHcqxYkRq+lB6P//qHtU6qGC///1ENXqhNwtxah7L+mE3C3FqHu4v6GC//9b5oHCQej//6h7isTYfmx99OGzyP//zkEreunFiIDOQf//RcTQKwAAqHuqKnPZAACoe6oqoYIAAIEgqiqhggAAz9aqKqGC///1EETnoYL//1vmROcCHf//qHtE50Ho//+oe0Tnc9kAAKh7jsaIgM5B//+GxP//zkEremzDoYIAAM/WDsihggAAgSBOFHPZAACoexIU///OQSt6pRSE3C3FqHs2F3R3KsWJEWMY0CsAAKh7rBahggAAgSCJFgQfToG3e4sTdHcqxYkRshMAACe1sHukFKGCAADP1ko3BB9Ogbd7BzmIgM5B//87Oth+bH304V430CsAAKh7gjZ0dyrFx+VYwwAAJ7Wwe3bCdHcqxcflur3NziWdt3sFys3OJZ23e3/JdHcqxcflQ8eE3C3FqHv3xNh+bH304R3LrWJNVAAAxhStYk1UAACXEs3OJZ23eycSDW3Zov8Z7hH//85BK3q+Eg1t2aL/GcQWzc4lnbd7mxWtYk1UAAASF4IRQ1MrejIXghFDUyt6Mx0Nbdmi/xnaHAQfToG3ey8crWJNVAAAcB0Nbdmi/xlREYIRQ1MrerY4iIDOQf//iTmCEUNTK3oKPHR3KsXH5WjE9+Xl4VPiGOY65RLigeO15Y3kXOUGyv/JoMvgyK3MJMiSyALLxjI5NwIxdDi0L1w5GTRNNg8gER0XHpYduhzyHXsehho5IOAZTSF6GVRVVFVUVVRVVFVUVVRVVFUYzDMYGMwzGBjMMxgYzDMYPRltII4aJSBJG/0fTRigIG816zeqNHk4kzYYNzU0XzfiN9k0AcwAzk7Myc2XyjPLLcqBy43HdM1T4OjjEeU04EjkZuAg5vDf1OC44xnkV+KG43vijSGsHK8d0hrcGzofUB3LHt4eVR7YGocfAzfINuk15TS1NM01GjRCNlM2lTThMkk4mC+LOiTLnc7dytDO48vCzLrMOsxMzjvLTsshzUrQ+cZj30Hk1d515BHjs+Cj4VLm")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pfapn")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_udooy"]
+size = Vector3(0.24883214, 1.1988951, 0.23699725)
+
+[node name="wooden_fence_pole2" type="StaticBody3D" unique_id=1794603168]
+
+[node name="wooden_fence_pole" type="MeshInstance3D" parent="." unique_id=1822858732]
+transform = Transform3D(1.7881393e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 1.7881393e-07, 0, 0, 0)
+mesh = SubResource("ArrayMesh_aidnh")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=721817719]
+transform = Transform3D(1.7881393e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, 1.7881393e-07, -0.0040188134, 0.60359704, -0.002560704)
+shape = SubResource("BoxShape3D_udooy")

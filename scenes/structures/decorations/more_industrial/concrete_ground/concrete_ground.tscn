@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://4sfhcue7g41g"]
+
+[ext_resource type="Texture2D" uid="uid://cgjkgmm2q5wva" path="res://assets/structures/more_industry/factory_modular_kit_18.jpg" id="1_qas0q"]
+[ext_resource type="Texture2D" uid="uid://cr7vg0p6m1lap" path="res://assets/structures/more_industry/factory_modular_kit_19.png" id="2_d4i6k"]
+[ext_resource type="Texture2D" uid="uid://5hhjl2s5tbgr" path="res://assets/structures/more_industry/factory_modular_kit_20.png" id="3_gu58i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a5oae"]
+resource_name = "concrete_floor"
+cull_mode = 2
+albedo_texture = ExtResource("1_qas0q")
+metallic_texture = ExtResource("2_d4i6k")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_d4i6k")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_gu58i")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yrhhm"]
+_surfaces = [{
+"aabb": AABB(-1.25, 0, -0.625, 2.5, 1e-05, 1.25),
+"format": 34896654337,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0),
+"name": "concrete_floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0kfhu"]
+resource_name = "Sketchfab_Scene_Factory_modularKit_69_concrete_floor_0"
+_surfaces = [{
+"aabb": AABB(-1.25, 0, -0.625, 2.5, 1e-05, 1.25),
+"attribute_data": PackedByteArray(255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 0, 0, 0, 0, 0, 63, 255, 255, 255, 127, 255, 255, 255, 127, 0, 0, 128, 63, 0, 0, 0, 63),
+"format": 34896654455,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0),
+"material": SubResource("StandardMaterial3D_a5oae"),
+"name": "concrete_floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(255, 255, 0, 0, 255, 255, 255, 191, 0, 0, 0, 0, 255, 255, 255, 191, 0, 0, 0, 0, 0, 0, 255, 191, 255, 255, 0, 0, 0, 0, 255, 191, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_yrhhm")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_qas0q"]
+data = PackedVector3Array(1.25, 0, 0.625, -1.25, 0, 0.625, -1.25, 0, -0.625, 1.25, 0, 0.625, -1.25, 0, -0.625, 1.25, 0, -0.625)
+
+[node name="Factory_modularKit_69" type="StaticBody3D" unique_id=379236202]
+
+[node name="Factory_modularKit_69_concrete_floor_0" type="MeshInstance3D" parent="." unique_id=1943562029]
+mesh = SubResource("ArrayMesh_0kfhu")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1021577901]
+shape = SubResource("ConcavePolygonShape3D_qas0q")

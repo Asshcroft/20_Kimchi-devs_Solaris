@@ -1,0 +1,41 @@
+~ start
+do Global.is_autoplay = true
+do Global.play_voice("greetings_1")
+Narrator: Right... Oh boy.[wait=1.0] Hello there! Looks like you're awake. Let me just clean up this mess!
+Narrator: ... Never mind the ship. They crash here quite often.
+Narrator: Anyway, let's get straight to the point...[wait=1.5] You need to save the universe.[wait=1.5] I know, sounds tough,[wait=1.5] but that's exactly why I'm here—to help you!
+do Global.is_autoplay = false
+# Создаем метку для возврата
+~ questions_menu
+
+- Remind me... who are you?
+	do Global.play_voice("who_are_you")
+	Narrator: I don't think that's important right now. What matters is that I'm here to help. I work for some big shots... Good guys. They want to save everyone, just like you.
+	=> questions_menu
+- And who exactly am I?
+	do Global.play_voice("who_am_I")
+	Narrator: A hero! The collective image of your most standard protagonist! Though, I suppose you aren't exactly "standard"... Regardless, I'll tell you more about that later.
+	=> questions_menu
+- What is this place?
+	do Global.play_voice("what_is_this_place")
+	Narrator: Cricket. The fourth planet of the Nastyvoid system. It orbits a yellow dwarf star at a speed of 24 km/s; a day here lasts 27 hours, 45 minutes, and 4 seconds.
+	=> questions_menu
+- Save the universe?
+	do Global.play_voice("save_the_universe")
+	Narrator: Precisely! You need to find a certain thingy and activate it. Sounds simple enough, right?
+	=> questions_menu
+- [End questioning]
+	do Global.play_voice("lets_move")
+	do Global.is_autoplay = true
+	=> end_conversation
+
+~ end_conversation
+Narrator: Alright, let's move.
+Narrator: Damn, almost forgot—you've got a transmitter in your pocket that lets me talk to you...[wait=3.0] Well, and it also provides access to all sorts of information. [wait=2.0]Though access for your model is a bit limited.[wait=2.0]
+Narrator: Don't lose it. Please.
+do Global.plot.first_message()
+do Global.is_autoplay = false
+do Global.input_locked = false
+
+
+=> END

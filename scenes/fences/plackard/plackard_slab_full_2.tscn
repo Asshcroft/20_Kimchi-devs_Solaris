@@ -1,0 +1,54 @@
+[gd_scene format=4 uid="uid://chbxwl0rb7u1b"]
+
+[ext_resource type="Texture2D" uid="uid://4lihuir5sww4" path="res://assets/structures/all_fences/plackard/plackard_slab_full_plackard_wall.jpg" id="1_hibia"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1yckr"]
+resource_name = "Plackard_wall"
+cull_mode = 2
+albedo_texture = ExtResource("1_hibia")
+texture_filter = 1
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_er6s5"]
+_surfaces = [{
+"aabb": AABB(-2.95, 0, -0.050000012, 2.9, 2.4327312, 0.100000024),
+"format": 34896613377,
+"index_count": 108,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYACAAJAAoACAALAAkADAAKAAkACwAMAAkADQAIAAoACwAIAA0ADAAOAAoADQAKAA4ACwAPAAwACwANAA8ADwAOAAwADwANAA4AEAARABIAEAATABEAFAASABEAEwAUABEAFQAQABIAEwAQABUAFAAWABIAFQASABYAEwAXABQAEwAVABcAFwAWABQAFwAVABYA"),
+"name": "Plackard_wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAC9UAAAAAAAAL1T//wAAAAAAAAAAAAD//y9UAAAAAP//AAD//wAA//8vVP//AAD//wAAAAAAAAAAxlX//wAAAAD1qQAAAAAAAPWp//8AAAAAxlUAAAAA///1qQAAAAD//8ZV//8AAP//9an//wAA///GVQAAAAAAAM+r//8AAAAA//8AAAAAAAD/////AAAAAM+rAAAAAP////8AAAAA///Pq///AAD///////8AAP//z6sAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6xhpp"]
+resource_name = "plackard_slab_full_Cube_035"
+_surfaces = [{
+"aabb": AABB(-2.95, 0, -0.050000012, 2.9, 2.4327312, 0.100000024),
+"attribute_data": PackedByteArray("FH1US2+FJCcUfSQnb4VUSw4IVEt1+iQnDggkJ3X6VEtvhVRLFH0kJ2+FJCcUfVRLdfpUSw4IJCd1+iQnDghUSw4I5Tl1+ms+dfrlOQ4Iaz51+uU5DghrPg4I5Tl1+ms+Xnw0dOOEdFBefHRQ44Q0dB0FNHQk/HRQHQV0UCT8NHTjhDR0Xnx0UOOEdFBefDR0JPw0dB0FdFAk/HRQHQU0dB0FCmAk/IJkJPwKYB0FgmQk/ApgHQWCZB0FCmAk/IJkintUnyuECHaKewh2K4RUn8ICVJ/z/Ah2wgIIdvP8VJ8rhFSfinsIdiuECHaKe1Sf8/xUn8ICCHbz/Ah2wgJUnxYCxZjo+Fye6PjFmBYCXJ7o+MWYFgJcnhYCxZjo+Fye"),
+"format": 34896613399,
+"index_count": 108,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUA"),
+"material": SubResource("StandardMaterial3D_1yckr"),
+"name": "Plackard_wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 72,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAC9UAAAAAAAAL1T//wAAAAAAAAAAAAAAAAAAAAAAAP//L1QAAAAAAAAvVAAAAAD//wAAAAAAAP//AAAAAP+///8vVP///7///y9UAAD/v///AAD///+///8AAP//AIAAAC9U//8AgP//L1T//wCAAAAAAP//AIAAAAAAAAD/P///AAD///8///8AAAAA/z8AAAAA////P///L1QAAP+/AAAvVP///78AAC9UAAD/v///L1T///+/AADGVf//AAAAAPWpAAAAAAAA9an//wAAAADGVQAAAAAAAMZVAAAAAP//9akAAAAAAAD1qQAAAAD//8ZVAAAAAP//xlUAAP+////1qf///7////WpAAD/v///xlX///+////GVf//AIAAAPWp//8AgP//9an//wCAAADGVf//AIAAAMZVAAD/P///xlX///8////GVQAA/z8AAMZV////P///9akAAP+/AAD1qf///78AAPWpAAD/v///9an///+/AADPq///AAAAAP//AAAAAAAA/////wAAAADPqwAAAAAAAM+rAAAAAP////8AAAAAAAD//wAAAAD//8+rAAAAAP//z6sAAP+//////////7//////AAD/v///z6v///+////Pq///AIAAAP////8AgP///////wCAAADPq///AIAAAM+rAAD/P///z6v///8////PqwAA/z8AAM+r////P/////8AAP+/AAD//////78AAP//AAD/v/////////+//z//f/8//3//P/9//z//f////3////9/////f////3//fwAA/38AAP9/AAD/fwAA/3////9/////f////3///wAA/38AAP9/AAD/fwAA/3////9/////f////3////9//z//f/8//3//P/9//z//f////3////9/////f////3//fwAA/38AAP9/AAD/fwAA/3////9/////f////3///wAA/38AAP9/AAD/fwAA/3////9/////f////3////9//z//f/8//3//P/9//z//f////3////9/////f////3//fwAA/38AAP9/AAD/fwAA/3////9/////f////3///wAA/38AAP9/AAD/fwAA/3////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_er6s5")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qg0p2"]
+size = Vector3(2.9, 2.4327312, 0.100000024)
+
+[node name="plackard_slab_full2" type="StaticBody3D" unique_id=1066672954]
+
+[node name="plackard_slab_full" type="MeshInstance3D" parent="." unique_id=2102046013]
+mesh = SubResource("ArrayMesh_6xhpp")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=779600064]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.2163656, 0)
+shape = SubResource("BoxShape3D_qg0p2")

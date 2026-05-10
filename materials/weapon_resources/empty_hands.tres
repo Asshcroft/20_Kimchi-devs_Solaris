@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" load_steps=2 format=3 uid="uid://d1o8508xbadpc"]
+
+[ext_resource type="Script" uid="uid://d3us6njg3fxol" path="res://scripts/weapon/weapon_resource.gd" id="1_0dk5o"]
+
+[resource]
+script = ExtResource("1_0dk5o")
+Weapon_Name = "Empty_Hands"
+Activate_Anim = "No_Weapon"
+Deactivate_Anim = "No_Weapon_Deactivate"
+Type = null
+Not_weapon = true
+metadata/_custom_type_script = "uid://d3us6njg3fxol"

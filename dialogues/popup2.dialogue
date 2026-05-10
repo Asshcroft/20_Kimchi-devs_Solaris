@@ -1,0 +1,6 @@
+~ start
+do Global.allowed_teleport = true
+Tip:
+	Press [wave]Q[/wave] to Shift into the nearest parallel world
+	[i]LMB to close the message[/i]
+=> END

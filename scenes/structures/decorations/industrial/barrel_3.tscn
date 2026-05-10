@@ -1,0 +1,58 @@
+[gd_scene format=4 uid="uid://bjqkq4vyxa5pb"]
+
+[ext_resource type="Texture2D" uid="uid://twhqx6wytouu" path="res://assets/structures/Industrial_exterior/Industrial_exterior_v2 (1)_Barrel_3.png" id="1_fcmkh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g6pa4"]
+resource_name = "Barrel_3"
+cull_mode = 2
+albedo_texture = ExtResource("1_fcmkh")
+metallic = 1.0
+roughness = 0.8585786
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7dci3"]
+_surfaces = [{
+"aabb": AABB(-0.2648378, -0.032030176, -0.27846694, 0.5296756, 0.9547463, 0.5569339),
+"format": 34896613377,
+"index_count": 108,
+"index_data": PackedByteArray("BgAHAAsABgAMAAcACwANAAYADQAMAAYADAAOAAcACwAHAA4ADQABAAwAAQAPAAwADAAPAA4AAAABAA0AAAAPAAEAAAANABAAEAAPAAAABQANAAsAEAANAAUAEAAJAA8ACgAJABAAEAAFAAoAEQAPAAkACgARAAkABQARAAoADgAPABEABQAEABEACwAOAAIACAAEAAUABQALABIABQASAAgAEgALAAIAAgAOAAMAAgADABIADgARABMAEwARAAQADgATAAMACAATAAQAEgADABMAEgATAAgA"),
+"lods": [0.118983455, PackedByteArray("BgAHAAIAAgAHAAMABgABAAcAAgADAAgABQAGAAIABQACAAgACAADAAQACAAEAAUABwAEAAMAAAABAAYAAAAGAAUAAQAJAAcAAAAJAAEABwAJAAQAAAAFAAoACgAJAAAABQAEAAoACgAEAAkA"), 0.5542087, PackedByteArray("AAABAAIAAgABAAMAAAAEAAEAAQAEAAMAAAACAAUABQAEAAAAAgADAAUABQADAAQA")],
+"name": "Barrel_3",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("/3///wAAAAAazwAAchgAABrP//+M5wAA/38AAP//AAAAAAAAjacAAAAA//+NpwAA/////3FYAAD//wAAjacAAOQw//+M5wAA5DAAAHIYAAAAAP//cVgAAP////+NpwAA//8AAHFYAAAaz///chgAABrPAACM5wAA/38AAAAAAADkMP//chgAAAAAAABxWAAA/3//////AADkMAAAjOcAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_oclgx"]
+resource_name = "Industrial_exterior_v2 (1)_Barrel_3"
+_surfaces = [{
+"aabb": AABB(-0.2648378, -0.032030176, -0.27846694, 0.5296756, 0.9547463, 0.5569339),
+"attribute_data": PackedByteArray("n9k3udXM//92pje5////////N7mrmf//F4A3uReA///U5XOFM7oapSrVqriQnOt/Oq0is5mB+qQLwDe5QLP//+GMN7lq5v//NPM3uSHwGqV/xHOF5Ysis4e3e5OZgXuTQLM3uXam//8LwP//1cw3uauZN7nhjP//n9n//2rmN7k08///1OVCszO6mpN/xEKzKtUKgCHwmpOHt/qkkJyKuDqtU4Xli1OF"),
+"format": 34896613399,
+"index_count": 108,
+"index_data": PackedByteArray("DgAPABgAGAAPABkADgAaAA8AGAAZAAIAGwAaAA4AAgAZAAUAGwABABoAAgAFABwAAAABABsAHAAFAB0AAAAeAAEAHAAdABAAEAAdAAcAEAAHAAYAHwAeAAAAHwARAB4AEgARAB8AEgAgABEABAAgABIABAADACAAIQAiACMAIwAiAAkAIQAjAAoAIQAkACIAIgAkABQAJQAkACEACAAkACUAJQAhABMADQAmACcAJwAmAAwADQAnABUADQAoACYAJgAoABYAKQAoAA0ACwAoACkAKQANABcA"),
+"lods": [0.118983455, PackedByteArray("DgAPAAIAAgAPAAUADgABAA8AAgAFABAAEAAFAAcAEAAHAAYAAAABAA4AAAARAAEAEgARAAAAEgADABEABAADABIAEwAJAAoAEwAUAAkACAAUABMADQAMABUADQAWAAwACwAWAA0ACwANABcA"), 0.5542087, PackedByteArray("AAABAAIAAAADAAEABAADAAAAAgABAAUAAgAFAAYABgAFAAcACAAJAAoACwAMAA0A")],
+"material": SubResource("StandardMaterial3D_g6pa4"),
+"name": "Barrel_3",
+"primitive": 3,
+"uv_scale": Vector4(1.9971133, 2, 0, 0),
+"vertex_count": 42,
+"vertex_data": PackedByteArray("/3///wAA//8azwAAchhl5hrP//+M55mZAAAAAI2nMrMAAP//jacys/9/AAD//wCAAAD//42nMrMAAAAAjacysxrPAAByGP8/AAAAAI2n/z//fwAA////P/9///8AAP+/Gs///4zn/78AAP//jaf/v/////9xWMvM//8AAI2nMrPkMP//jOeZmeQwAAByGGXmAAD//3FYy8z//wAAjaf/P+QwAAByGP8/5DD//4zn/7//////cVj/vwAA//9xWP+//////42nMrMazwAAjOeZmf//AABxWMvMGs///3IYZeb/f/////8AgOQwAACM55mZ/38AAAAA///kMP//chhl5gAAAABxWMvMGs8AAIzn/z8AAAAAcVj/P+QwAACM5/8//38AAAAA/z///wAAcVj/P/////+Np/+//3///////78az///chj/v+Qw//9yGP+//3////9/AAD/fwAA/3////9/////f////3////9///8AAP9/AAD/fwAA/3/+//9//v//f////3//fwAA/38AAP9/////f////3///wAA/38AAP9//v//f/7//3/+//9//38AAP9/AAD/fwAA/38AAP9/////f////3////9/////f///AAD/fwAA/38AAP9/AAD/fwAA/3/+//9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_7dci3")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fcmkh"]
+height = 0.9547463
+radius = 0.2648378
+
+[node name="Barrel_3" type="StaticBody3D" unique_id=1362276450]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1260603664]
+mesh = SubResource("ArrayMesh_oclgx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1699424105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.445343, 0)
+shape = SubResource("CylinderShape3D_fcmkh")

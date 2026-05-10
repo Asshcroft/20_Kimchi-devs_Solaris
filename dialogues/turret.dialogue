@@ -1,0 +1,29 @@
+~ activated
+do Global.input_locked = true
+do Global.is_autoplay = true
+do Global.play_voice("turret")
+Defense System: [color=orange]I must ask you to stop.[/color]
+Defense System: [color=orange]...[/color]
+Defense System: [color=orange][speed=0.5]Thank you for visiting our planet! Unfortunately, we are temporarily closed due to temporal anomalies.[/color]
+Defense System: [color=orange][speed=0.3]As a token of our appreciation for your attempt to enter protected territory, you will be subjected to execution by the gate's defense turret.[wait=2.0][/color]
+Defense System: [color=orange][speed=0.3]Your death will significantly improve our quality of service![/color]
+do Global.is_firing = true
+Defense System: [wait=6.0]...
+do Global.play_voice("gates_narrator")
+Narrator: [color=white] That... was strange.[wait=1.0] Even for this place.
+Narrator: ... Anyway. Let’s focus on what you need to do.
+Narrator: Have you seen the movie "The Matrix"? [wait=1.0] Remember how people lived in a computer simulation?
+Narrator: That is exactly where you are right now.[wait=1.0][speed=0.2] Or rather, you are in an [wave][color=red]ABSOLUTELY ACCURATE[/color][/wave] simulation of the entire universe.
+Narrator: ... [speed=0.5]To be even more precise, a simulation of several universes at once.
+Narrator: However, there's a catch.[wait=2.0] You aren't even a [wait=0.3]human, a [wait=0.3]humanoid,[wait=0.3] a reptilian, or any organic[wait=0.3] or silicon-based life form.
+Narrator: [speed=0.2]You are a set of electromagnetic pulses in space.[wait=2.0] Which means you don't have a body.
+Narrator: [speed=0.5]You’ve probably noticed that by now...
+Narrator: So.[speed=0.3]You were created for one purpose only. To find a certain gizmo on this planet and hand it over to the good guys.
+Narrator: But [speed=0.5]it looks like these gates won't let us pass through so easily.[wait=1.0] There's clearly no button to open them here.
+Narrator: It should have been here[wait=1.5], but it seems that due to the cataclysm that hit this planet[wait=0.3], it got swept into the wrong dimension.
+Narrator: But don't worry. [speed=0.5][color=green]Ind Soc[/color][/speed][speed=0.3] Corporation's technology allows us to travel between worlds in the blink of an eye!
+Narrator: Just press Q
+do Global.is_autoplay = false
+do Global.input_locked = false
+do Global.plot.second_message()
+=> END

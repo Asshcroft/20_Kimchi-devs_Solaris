@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://duw47kabvnu1u"
+path="res://.godot/imported/teleport_error.dialogue-6fa4b31bb228f201f9b9ec9cc8d160db.tres"
+
+[deps]
+
+source_file="res://dialogues/teleport_error.dialogue"
+dest_files=["res://.godot/imported/teleport_error.dialogue-6fa4b31bb228f201f9b9ec9cc8d160db.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,54 @@
+[gd_scene format=4 uid="uid://cype2iojbo1eh"]
+
+[ext_resource type="Texture2D" uid="uid://cyj4awnog2drx" path="res://assets/structures/Industrial_exterior/Industrial_exterior_v2 (1)_Road.png" id="1_kjtm8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tjlq4"]
+resource_name = "Road"
+cull_mode = 2
+albedo_texture = ExtResource("1_kjtm8")
+metallic = 1.0
+roughness = 0.8585786
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_lqns8"]
+_surfaces = [{
+"aabb": AABB(-5.0000005, -0.091819495, -5.0000005, 10.000001, 0.18363905, 10.000001),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAACAAMAAAAEAAEAAAADAAUABgAFAAMABgADAAcAAQAEAAgAAQAIAAkACAAKAAkACAALAAoA"),
+"name": "Road",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("1NgAAP7/AAAqJwAAAAAAANTYAAAAAAAA1Nj+/wAAAAAqJwAA//8AANTY/v/+/wAA///+//7/AAD+//7/AAAAACon/v///wAAKif+/wAAAAAAAP//AAAAAAAA/v///wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rceah"]
+resource_name = "Industrial_exterior_v2 (1)_Road_short"
+_surfaces = [{
+"aabb": AABB(-5.0000005, -0.091819495, -5.0000005, 10.000001, 0.18363905, 10.000001),
+"attribute_data": PackedByteArray("/38eNAAA/ssAAB40/3/+ywAA/sv/f/XTAAD10/9//sv/fx40AAAmLP9/JiwAAB40/38AAAAAJiwAAAAA/38mLP9/9dMAAP//AAD10/9///8="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_tjlq4"),
+"name": "Road",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("1NgAAP7/VNUqJwAAAABU1dTYAAAAAFTVKicAAP//VNUqJwAAAAD//yon/v//////Kif+/wAA//8qJwAA/////9TYAAD+//+/1Nj+/wAA/7/U2P7//v//v9TYAAAAAP+////+//7/VNXU2P7/AABU1f7//v8AAFTV1Nj+//7/VNUqJ/7///9U1QAA//8AAFTVKif+/wAAVNUAAP7///9U1aqqqqqqqqqqqqqqqqqqqqr/v/9//7//f/+//3//v/9//3////9/////f////3///6qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_lqns8")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_kjtm8"]
+data = PackedVector3Array(3.47, -0.0918, 4.9997997, -3.4701, -0.0918, -5, 3.47, -0.0918, -5, 3.47, -0.0918, 4.9997997, -3.4701, -0.0918, 5, -3.4701, -0.0918, -5, -3.4701, -0.0918, -5, -3.4701, 0.0918, 5, -3.4701, 0.0918, -5, -3.4701, -0.0918, -5, -3.4701, -0.0918, 5, -3.4701, 0.0918, 5, 3.47, -0.0918, 4.9997997, 3.47, 0.0918, -5, 3.47, 0.0918, 4.9997997, 3.47, -0.0918, 4.9997997, 3.47, -0.0918, -5, 3.47, 0.0918, -5, 5, 0.0918, 4.9997997, 3.47, 0.0918, -5, 4.9997997, 0.0918, -5, 5, 0.0918, 4.9997997, 3.47, 0.0918, 4.9997997, 3.47, 0.0918, -5, -3.4701, 0.0918, 5, -5, 0.0918, -5, -3.4701, 0.0918, -5, -3.4701, 0.0918, 5, -5, 0.0918, 5, -5, 0.0918, -5)
+
+[node name="Road_short" type="StaticBody3D" unique_id=990821033]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=118735297]
+mesh = SubResource("ArrayMesh_rceah")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=531403164]
+shape = SubResource("ConcavePolygonShape3D_kjtm8")

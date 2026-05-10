@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dfh0387wxvgxd"
+path="res://.godot/imported/JDSherbert - Sci Fi UI SFX Pack - Cancel - 1.ogg-abba27639ecfa63b15272aa6cbbf1c6c.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/UI/JDSherbert - Sci Fi UI SFX Pack - Cancel - 1.ogg"
+dest_files=["res://.godot/imported/JDSherbert - Sci Fi UI SFX Pack - Cancel - 1.ogg-abba27639ecfa63b15272aa6cbbf1c6c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

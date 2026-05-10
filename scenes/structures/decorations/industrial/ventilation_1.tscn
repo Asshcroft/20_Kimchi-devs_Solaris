@@ -1,0 +1,57 @@
+[gd_scene format=4 uid="uid://c2evx8w7g3rqs"]
+
+[ext_resource type="Texture2D" uid="uid://d11uiegeti2we" path="res://assets/structures/Industrial_exterior/Industrial_exterior_v2 (1)_Ventilation_1.png" id="1_2v1cs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hrhxl"]
+resource_name = "Ventilation_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_2v1cs")
+metallic = 1.0
+roughness = 0.8585786
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bjj4g"]
+_surfaces = [{
+"aabb": AABB(-0.57521856, -0.03970478, -0.30574828, 1.1504447, 1.5023237, 0.6115271),
+"format": 34896613377,
+"index_count": 192,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAACAAMAAwABAAQAAAAFAAEABQAEAAEAAAADAAYABgAFAAAABgADAAQABQAHAAQABgAEAAcABgAHAAUACAAJAAoACwAIAAoACwAMAAgACAAMAA0ACAANAA4ACAAOAAkADwAOAA0ADwAJAA4AEAAJABEAEAARABIAEwARAAkAEwASABEAEwAJABQAFQAQABIAEwAVABIAFQAWABAAFgATABQAFgAVABMAFwAYABkAGgAXABkAGgAbABcAFwAcABgAHQAaABkAGwAaAB0AHQAZABgAHQAYABwAGwAdAB4AHQAcAB4AHwAcACAAHwAgACEAIgAgABwAIgAhACAAIgAcACMAIgAkACEAJQAiACMAJQAkACIAJgAnACgAKQAoACcAJgAqACcAKAApACsAJgAsACoAKwApACwALAAmAC0AKwAsAC0ALgAvADAALwAxADAALgAyAC8AMQAvADMANAAyAC4AMQAzADUAMgA0ADUAMQA1ADQA"),
+"lods": [0.40534344, PackedByteArray("AAABAAIAAwACAAEAAAACAAMAAwABAAQAAAAFAAEABQAEAAEAAAADAAYABgAFAAAABgADAAQABQAHAAQABgAEAAcABgAHAAUA")],
+"name": "Ventilation_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 54,
+"vertex_data": PackedByteArray("/v80SurVAAAAAP//6tUAAP///v/q1QAA/v/+/wEAAAAAAP//AQAAAAAANErq1QAA/v80SgEAAAAAADRKAQAAAHnfAABaFgAAltM0SloWAAB53zRKWhYAAHnfNEoAAAAAed8AAAAAAACW0wAAAAAAAJbTAABaFgAAltM0SgAAAACW0xtBWhYAAJbTNEr+/wAAltMbQf7/AAB53zRK/v8AAHnfNEpaFgAAed8bQf7/AAB53xtBWhYAAA4jG0FaFgAADiM0Sv//AAAOIxtB//8AAPAuG0H//wAA8C4bQVoWAAAOIzRKWhYAAPAuNEr//wAA8C40SloWAAAOIzRKAAAAAA4jAABaFgAADiMAAAAAAADwLgAAWhYAAPAuNEpaFgAA8C4AAAAAAADwLjRKAAAAAHnfG0HPvQAAltPoB1oWAACW0xtBz70AAJbTyRNaFgAAed/pB1oWAACW0xhBApsAAHnfyRNaFgAAed8YQQGbAAAOIxhBApsAAPAuyRNaFgAA8C4YQQGbAADwLhtBz70AAA4jyRNaFgAA8C7pB1oWAAAOIxtBz70AAA4j6AdaFgAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_a47sp"]
+resource_name = "Industrial_exterior_v2 (1)_Ventilation_1"
+_surfaces = [{
+"aabb": AABB(-0.57521856, -0.03970478, -0.30574828, 1.1504447, 1.5023237, 0.6115271),
+"attribute_data": PackedByteArray("Ntkg0w+AD4A22Q+AD4Ag0yXbq8lru8V/B9wqgIm6R8k22SDT1/8PgDbZD4DX/yDTNtk7+g+AINM22SDTD4A7+sLZJfn+/yXU//8l+cLZJdQ22SDT1/8PgNf/INM22Q+AE887+tf//v/X/zv6E8/+/0LBO/rX//7/1/87+kLB/v/X/zv6XcX+/9f//v9dxTv68cL+//a8O/r2vP7/8cI7+rT4/v9hyjv6tPg7+mHK/v8PgDv6pL7+/6S+O/oPgP7/D4A7+tOw/f8PgP7/07A7+kLBO/rX//7/QsH+/9f/O/pCwTv61//+/0LB/v/X/zv6QsE7+tf//v/X/zv6QsH+/w+AO/rTsP//07A5+g+A/v/xwv7/9rw7+va8/v/xwjv6hbU7+g+A/v8zhzv6ibr+/w+A/v+FtTv6M4c7+om6/v+0+P7/Yco7+rT4O/phyv7/8cL+//a8O/r2vP7/8cI7+tf/O/pdxf7/1//+/13FO/oPgDv607D9/w+A/v/TsDv6E887+tf//v/X/zv6E8/+/w+AO/rTsP//07A5+g+A/v8PgDv6pL7+/6S+O/oPgP7/D4A7+qS+/v8PgP7/pL47+g+AO/qkvv7/D4D+/6S+O/qFtTv6D4D+/zOHO/qJuv7/D4D+/4W1O/ozhzv6ibr+//HC/v/2vDv69rz+//HCO/o="),
+"format": 34896613399,
+"index_count": 192,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASQBIAEsATABNAE4ATQBMAE8AUABRAFIAUABTAFEAVABVAFYAVABXAFUAWABZAFoAWABbAFkAXABdAF4AXABfAF0AYABhAGIAYABjAGEAZABlAGYAZABnAGUACAAJAAoACAALAAkAaABpAGoAaABrAGkADAANAA4ADAAPAA0AbABtAG4AbABvAG0AcABxAHIAcABzAHEAdAB1AHYAdQB0AHcAeAB5AHoAeQB4AHsAEAARABIAEAATABEAFAAVABYAFAAXABUAfAB9AH4AfAB/AH0A"),
+"lods": [0.40534344, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA")],
+"material": SubResource("StandardMaterial3D_hrhxl"),
+"name": "Ventilation_1",
+"primitive": 3,
+"uv_scale": Vector4(2.0014327, 1.999008, 0, 0),
+"vertex_count": 128,
+"vertex_data": PackedByteArray("/v80SurVAIAAAP//6tUAgP///v/q1QCAAAA0SurVAID+//7/AQCd1QAA///q1Z3VAAD//wEAndX///7/6tWd1QAANErq1QAAAAD//wEAAAAAAP//6tUAAAAANEoBAAAA/v80SgEA/78AADRK6tX/v/7/NErq1f+/AAA0SgEA/7/+/zRKAQD//wAA//8BAP//AAA0SgEA///+//7/AQD///7/NErq1f+//v/+/wEA/7/+/zRKAQD/v////v/q1f+/ed8AAFoW/z+W0zRKWhYBOnnfNEpaFv8/ltMAAFoW/z8OIxtBWhb/Pw4jNEr///8/DiMbQf///z8OIzRKWhb/P3nfG0HPva44ltPoB1oWrjiW0xtBz72uOHnf6QdaFq448C40Sv///n8OIxtB///+fw4jNEr///5/8C4bQf///n8OIxhBAptE5/AuyRNaFkTn8C4YQQGbROcOI8kTWhZE53nfNEr+/6oqltM0SloWAjp53zRKWhaqKpbTNEr+/6oqed80SgAAVdV53wAAWhZU1XnfNEpaFlXVed8AAAAAVNV53xtBWhb//3nfNEr+////ed80SloW//953xtB/v////AuG0FaFv//8C40Sv/////wLjRKWhb///AuG0H/////ltMbQVoW/z+W0zRK/v//P5bTG0H+//8/ltM0SloW/z+W0zRKAACqKpbTAABaFqsqltMAAAAAqyqW0zRKWhaqKnnfNEr+//5/ltMbQf7//n+W0zRK/v/+f3nfG0H+//5/8C7JE1oWxsTwLhtBz73GxPAuGEEBm8bE8C7pB1oWxsQOIxtBz73nEw4jyRNaFucTDiMYQQKb5xMOI+gHWhbnE5bTGEECm0Tned/JE1oWROd53xhBAZtE55bTyRNaFkTned8AAFoW/j+W0wAAAAD+P5bTAABaFv4/ed8AAAAA/j/wLhtBz72uOA4j6AdaFq44DiMbQc+9rjjwLukHWhauOPAuNEoAAFXV8C4AAFoWVNXwLjRKWhZV1fAuAAAAAFTV8C4AAFoW/z8OIzRKWhYBOvAuNEpaFv8/DiMAAFoW/z8OIzRKAACqKg4jAABaFqsqDiMAAAAAqyoOIzRKWhaqKvAuNEr//6oqDiM0SloWAjrwLjRKWhaqKg4jNEr//6oq8C4bQf//VdUOIxtBWhZV1Q4jG0H//1XV8C4bQVoWVdV53xtB/v9V1ZbTG0FaFlXVltMbQf7/VdV53xtBWhZV1XnfyRNaFsbEed8bQc+9xsR53xhBAZvGxHnf6QdaFsbEltMbQc+95xOW08kTWhbnE5bTGEECm+cTltPoB1oW5xPwLgAAWhb+Pw4jAAAAAP4/DiMAAFoW/j/wLgAAAAD+P/9/////f////3////9///8o1VMqKNVTKijVUyoo1VMq/z//f/8//3//P/9//z//fwAA/38AAP9/AAD/fwAA/3//f/7//3/+//9//v//f/7//38AAP9/AAD/fwAA/38AAP/////84vsc////////////f/7//3/+//9//v//f/7/4h4c4eIeHOHiHhzh4h4c4f9//3//f/9//3////9//3/ls+Wz5bPls+Wz5bPls+WzVNWqKv/i/xxU1aoqVNWqKqqqVlWqqlVVqqpWVaqqVVX/v/9//7//f/+//3//v/9//7//f/+//3//v/9//7//f/9//v//f/7//3/+//9//v9VVaqqVVWrqlVVq6pUVamq/3//f/9//3//f////3//f/Wa7DX1muw19ZrsNfWa7DXaSbST2km0k9pJtJPaSbST5bPls+Wz5bPls+Wz5bPlswAA/38AAP9/AAD/fwAA/3/iHhzh4h4c4eIeHOHiHhzhqqpWVaqqVVWqqlZVqqpVVf/////84vsc//////////9VVaqqVVWrqlVVq6pUVamqVNWqKv/i/xxU1aoqVNWqKlRVVVVUVVVVVFVVVVRVVVVUVVVVVFVVVVRVVVVUVVVV9ZrsNfWa7DX1muw19ZrsNdpJtJPaSbST2km0k9pJtJMAAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_bjj4g")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2v1cs"]
+size = Vector3(1.1504447, 1.5023237, 0.6115271)
+
+[node name="Ventilation_1" type="StaticBody3D" unique_id=686660702]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1224326586]
+mesh = SubResource("ArrayMesh_a47sp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2106851804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8146973e-06, 0.7114571, 1.5258789e-05)
+shape = SubResource("BoxShape3D_2v1cs")

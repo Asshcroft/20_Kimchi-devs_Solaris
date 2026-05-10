@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" load_steps=3 format=3 uid="uid://cmnao6jdp5ga7"]
+
+[ext_resource type="Script" uid="uid://d3us6njg3fxol" path="res://scripts/weapon/weapon_resource.gd" id="1_grdbq"]
+[ext_resource type="PackedScene" uid="uid://b1knd550pfrke" path="res://scenes/objects/axe.tscn" id="1_mkwsj"]
+
+[resource]
+script = ExtResource("1_grdbq")
+Weapon_Name = "Axe"
+Activate_Anim = "draw_axe"
+Shoot_Anim = "attack_axe"
+Deactivate_Anim = "deactivate_axe"
+Idle_Anim = "hold_axe"
+Auto_Fire = true
+Weapon_Range = 500
+Damage = 5
+Type = 1
+Weapon_Drop = ExtResource("1_mkwsj")
+metadata/_custom_type_script = "uid://d3us6njg3fxol"

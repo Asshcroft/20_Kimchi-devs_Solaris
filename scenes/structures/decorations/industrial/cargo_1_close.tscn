@@ -1,0 +1,56 @@
+[gd_scene format=4 uid="uid://d3hjv5ss2em2o"]
+
+[ext_resource type="Texture2D" uid="uid://ck833gfn6g5oy" path="res://assets/structures/Industrial_exterior/Industrial_exterior_v2 (1)_Cargo_1.png" id="1_fsiqo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kemje"]
+resource_name = "Cargo_1_close"
+cull_mode = 2
+albedo_texture = ExtResource("1_fsiqo")
+metallic = 1.0
+roughness = 0.8585786
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_27cmh"]
+_surfaces = [{
+"aabb": AABB(-4.060351, -0.080943055, -1.5107453, 8, 3, 3),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAAAEAAEAAwAEAAAAAQAFAAIAAgAFAAMABAAGAAEAAQAGAAUABAAHAAYABQAGAAcAAwAHAAQABQAHAAMA"),
+"name": "Cargo_1_close",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("//8AAP//AAAAAAAAAAAAAAAAAAD//wAA////////AAD//wAAAAAAAAAA/////wAAAAD//wAAAAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sox11"]
+resource_name = "Industrial_exterior_v2 (1)_Cargo_1_close"
+_surfaces = [{
+"aabb": AABB(-4.060351, -0.080943055, -1.5107453, 8, 3, 3),
+"attribute_data": PackedByteArray("VcK9rB4A2lkeAL2sVcLaWQAAWVn7UwAA+1NZWQAAAAAVAOf/YMLxrGDC5/8VAPGsFQDn/2DC8axgwuf/FQDxrB4AvaxVwtpZVcK9rB4A2lmvVI4AAahZWa9UWVkBqI4A"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_kemje"),
+"name": "Cargo_1_close",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("//8AAP///z8AAAAAAAD/PwAAAAD///8///8AAAAA/z8AAAAAAAD/vwAA//////+/AAAAAP///78AAP//AAD/v///AAAAAP//AAD//wAA//8AAAAAAAD///////8AAP//AAAAAP//AID///////8AgP//AAD//wCAAAD/////AIAAAP//////v/////8AAP+//////////78AAP//AAD/v/////////+///8AAAAA/7///wAA////v/////8AAP+/AAD/fwAA/38AAP9/AAD/f/9/////f////3////9/////f////3////9/////f////3////9/////f////3///////3////9/////f////3//fwAA/38AAP9/AAD/fwAA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_27cmh")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fsiqo"]
+size = Vector3(8, 3, 3)
+
+[node name="Cargo_1_close" type="MeshInstance3D" unique_id=448068660]
+mesh = SubResource("ArrayMesh_sox11")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=338135517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060350895, 1.4190569, -0.010745287)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1232770051]
+shape = SubResource("BoxShape3D_fsiqo")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ckevvaah5u8fq"
+path="res://.godot/imported/JDSherbert - Sci Fi UI SFX Pack - Select - 1.ogg-e6055acec2aa1aa4a3181961d7800983.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/UI/JDSherbert - Sci Fi UI SFX Pack - Select - 1.ogg"
+dest_files=["res://.godot/imported/JDSherbert - Sci Fi UI SFX Pack - Select - 1.ogg-e6055acec2aa1aa4a3181961d7800983.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,15 @@
+~ start
+do Global.is_autoplay = true
+do Global.play_voice("asteroid")
+Narrator: Whoa. We’re on an asteroid. [wait=1.5] Be glad you don't have a body, which means you don't have lungs either.
+Narrator: No lungs,[wait=1.0] no problems.
+Narrator: Personally, [wait=2.0]I loved visiting my grandmother on her asteroid when I was a kid.
+Narrator: Over there, look.[wait=1.0] See that door at the top of the pipe? [wait=1.0] You need to go there; I think it's the only way out.
+Narrator: I see a few buttons near those towers. [wait=1.0] Try using them.
+=> END
+
+~ ending
+do Global.is_autoplay = true
+do Global.play_voice("asteroid_2")
+Narrator: And here is... Wait [wait=1.0] is that a turret?
+=> END

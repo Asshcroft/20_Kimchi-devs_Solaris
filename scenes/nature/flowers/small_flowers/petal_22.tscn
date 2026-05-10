@@ -1,0 +1,49 @@
+[gd_scene format=4 uid="uid://c80bsoib448ij"]
+
+[ext_resource type="Texture2D" uid="uid://dwq07kegt032h" path="res://assets/nature/stylized_pack/Flowers.png" id="1_sd62q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7y7d"]
+resource_name = "Flowers"
+transparency = 2
+alpha_scissor_threshold = 0.2
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_sd62q")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0aj7l"]
+_surfaces = [{
+"aabb": AABB(-0.32067162, 0, -0.32914135, 0.6732153, 0.2360607, 0.6310947),
+"format": 34896613377,
+"index_count": 45,
+"index_data": PackedByteArray("AAABAAIAAgABAAMABAABAAAAAwABAAUABgABAAQABQABAAcACAABAAYABwABAAkACgABAAgACwABAAoACQABAAwADQABAAsADAABAA4ADwABAA0ADgABAA8A"),
+"name": "Flowers",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("tfeOuh9xAADweQAAg4UAAP//u773TwAA7K3z160/AACxy4q99J4AAAyOYuqgDAAAwdr3q/rkAAC7YAP5AAAAANPU+qi3/AAAGkhe8q5EAADUgcTDleUAAK1M9cz//wAAyQj//01WAADsLePWbPcAAAAAkft3eQAA7jHS5LSpAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2iqxj"]
+resource_name = "Petal_2_Plane_024"
+_surfaces = [{
+"aabb": AABB(-0.32067162, 0, -0.32914135, 0.6732153, 0.2360607, 0.6310947),
+"attribute_data": PackedByteArray("PSQ0Ax49JjjAFOgC3BY+K1M96RIMBMM/Xlo7BJ0DblZ1ZXEEiySMWqtk9C1CdhFEbDNjdvd1c1PaQ7N2ZVMAWg=="),
+"format": 34896613399,
+"index_count": 45,
+"index_data": PackedByteArray("AAABAAIAAgABAAMABAABAAAAAwABAAUABgABAAQABQABAAcACAABAAYABwABAAkACgABAAgACwABAAoACQABAAwADQABAAsADAABAA4ADwABAA0ADgABAA8A"),
+"material": SubResource("StandardMaterial3D_w7y7d"),
+"name": "Flowers",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("tfeOuh9xWNPweQAAg4UJ3P//u773T+TO7K3z160/ysuxy4q99J4q0AyOYuqgDP3Nwdr3q/rkkc+7YAP5AABp2NPU+qi3/E3dGkhe8q5ELN3UgcTDleXQ561M9cz//zznyQj//01Wj9/sLePWbPdQ7gAAkft3ebTt7jHS5LSpGva4n5S/pKTQqtqW17JGj0qrY5ptxF2ULqpyl0C/rqKbm5unhreQp4qSjq+6tdet87ILqJaYDK7Lpo+tDKA2sF+h")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_0aj7l")
+
+[node name="Petal_22" type="Node3D" unique_id=950980397]
+
+[node name="Petal_2" type="MeshInstance3D" parent="." unique_id=446153960]
+mesh = SubResource("ArrayMesh_2iqxj")
+skeleton = NodePath("")

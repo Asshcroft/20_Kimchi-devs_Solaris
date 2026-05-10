@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ccuifnet8074n"
+path="res://.godot/imported/bridge_death.dialogue-e5a952df7566239c96af19f5f1e5c803.tres"
+
+[deps]
+
+source_file="res://dialogues/bridge_death.dialogue"
+dest_files=["res://.godot/imported/bridge_death.dialogue-e5a952df7566239c96af19f5f1e5c803.tres"]
+
+[params]
+
+defaults=true

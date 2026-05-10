@@ -1,0 +1,92 @@
+[gd_scene format=4 uid="uid://cni0lpbfm0ht0"]
+
+[ext_resource type="Texture2D" uid="uid://cyj4awnog2drx" path="res://assets/structures/Industrial_exterior/Industrial_exterior_v2 (1)_Road.png" id="1_a2hde"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tjlq4"]
+resource_name = "Road"
+cull_mode = 2
+albedo_texture = ExtResource("1_a2hde")
+metallic = 0.37
+roughness = 0.8585786
+texture_filter = 1
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rlvrb"]
+_surfaces = [{
+"aabb": AABB(-5.000001, -0.09181979, -10.000001, 10.000002, 0.18363965, 20),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAAAEAAEAAQAFAAMABgADAAUABgAFAAcAAAAIAAQAAAAJAAgACQAKAAgACQALAAoA"),
+"name": "Road",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("KicAAP//AADU2AAAAAAAANTYAAD//wAA1Nj+////AAAqJwAAAAAAANTY/v8AAAAA///+////AAD+//7/AAAAACon/v8AAAAAKif+////AAAAAP//AAAAAAAA/v///wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hyl2b"]
+resource_name = "Industrial_exterior_v2 (1)_Road_long"
+_surfaces = [{
+"aabb": AABB(-5.000001, -0.09181979, -10.000001, 10.000002, 0.18363965, 20),
+"attribute_data": PackedByteArray("///+ywAAHjT//x40AAD+ywAAHjT//yYs//8eNAAAJiz///7LAAD10wAA/sv///XT//8AAAAAJiwAAAAA//8mLP//9dMAAP//AAD10/////8="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"material": SubResource("StandardMaterial3D_tjlq4"),
+"name": "Road",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("KicAAP//VNXU2AAAAABU1dTYAAD//1TVKicAAAAAVNXU2AAAAAD/v9TY/v////+/1NgAAP///7/U2P7/AAD/vyonAAD/////Kif+/wAA//8qJwAAAAD//yon/v/////////+////VNXU2P7/AABU1f7//v8AAFTV1Nj+////VNUqJ/7///9U1QAA//8AAFTVKif+/wAAVNUAAP7///9U1aqqqqqqqqqqqqqqqqqqqqr/f////3////9/////f////7//f/+//3//v/9//7//f6qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_rlvrb")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_a2hde"]
+noise_type = 0
+frequency = 0.0219
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_fgemp"]
+noise = SubResource("FastNoiseLite_a2hde")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_88j6l"]
+albedo_color = Color(0.29219002, 0.29219005, 0.29219, 1)
+metallic = 1.0
+metallic_texture = SubResource("NoiseTexture2D_fgemp")
+
+[sub_resource type="BoxMesh" id="BoxMesh_f8cyr"]
+size = Vector3(10, 10, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_85n50"]
+albedo_color = Color(0.29219002, 0.29219005, 0.29219, 1)
+metallic = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_m018n"]
+size = Vector3(1.5, 0.2, 20)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_a2hde"]
+data = PackedVector3Array(-3.4701, -0.0918, 10, 3.47, -0.0918, -10, 3.47, -0.0918, 10, -3.4701, -0.0918, 10, -3.4701, -0.0918, -10, 3.47, -0.0918, -10, 3.47, -0.0918, -10, 3.47, 0.0918, 10, 3.47, -0.0918, 10, 3.47, -0.0918, -10, 3.47, 0.0918, -10, 3.47, 0.0918, 10, -3.4701, -0.0918, 10, -3.4701, 0.0918, -10, -3.4701, -0.0918, -10, -3.4701, -0.0918, 10, -3.4701, 0.0918, 10, -3.4701, 0.0918, -10, 5, 0.0918, 10, 3.47, 0.0918, -10, 4.9997997, 0.0918, -10, 5, 0.0918, 10, 3.47, 0.0918, 10, 3.47, 0.0918, -10, -3.4701, 0.0918, 10, -5, 0.0918, -10, -3.4701, 0.0918, -10, -3.4701, 0.0918, 10, -5, 0.0918, 10, -5, 0.0918, -10)
+
+[node name="Road_long" type="StaticBody3D" unique_id=2088590227]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=748228376]
+mesh = SubResource("ArrayMesh_hyl2b")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=351145915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.107647, 0)
+material_override = SubResource("StandardMaterial3D_88j6l")
+mesh = SubResource("BoxMesh_f8cyr")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1883625944]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2272186, -0.010488391, 0)
+material_override = SubResource("StandardMaterial3D_85n50")
+mesh = SubResource("BoxMesh_m018n")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1924091562]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2345943, -0.010488391, 0)
+material_override = SubResource("StandardMaterial3D_85n50")
+mesh = SubResource("BoxMesh_m018n")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1000803467]
+shape = SubResource("ConcavePolygonShape3D_a2hde")

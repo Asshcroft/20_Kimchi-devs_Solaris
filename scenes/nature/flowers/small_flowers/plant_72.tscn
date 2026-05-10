@@ -1,0 +1,51 @@
+[gd_scene format=4 uid="uid://vsmv7bjt0ovc"]
+
+[ext_resource type="Texture2D" uid="uid://dw4n3k1hre8ia" path="res://assets/nature/stylized_pack/Leaves.png" id="1_phdfn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mfgn8"]
+resource_name = "Leaves"
+transparency = 2
+alpha_scissor_threshold = 0.2
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_phdfn")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_l0lvj"]
+_surfaces = [{
+"aabb": AABB(-0.44815123, 0.07910457, -0.46386588, 1.0478355, 0.24951479, 0.962121),
+"format": 34896613377,
+"index_count": 144,
+"index_data": PackedByteArray("AAAYAAIAAgAYAAMABAAYAAAAAwAYAAYABQAYAAQABgAYAAcAAQAYAAUABwAYAAEACAAZAAoACgAZAAsADAAZAAgACwAZAA4ADQAZAAwADgAZAA8ACQAZAA0ADwAZAAkAEQAaABcAFwAaABYAEwAaABEAFgAaABUAEgAaABMAFQAaABQAEAAaABIAFAAaABAAGwAcAB0AHQAcAB4AHwAcABsAHgAcACAAIQAcAB8AIAAcACIAIwAcACEAIgAcACMAJAAlACYAJgAlACcAKAAlACQAJwAlACkAKgAlACgAKQAlACsALAAlACoAKwAlACwALQAuAC8ALwAuADAAMQAuAC0AMAAuADIAMwAuADEAMgAuADQANQAuADMANAAuADUA"),
+"lods": [0.21054845, PackedByteArray("AAABAAIAAgABAAMABAABAAAABQABAAQAAwABAAYABgABAAcACAAJAAoACgAJAAsADAAJAAgADQAJAAwACwAJAA4ADgAJAA8AEAARABIAEgARABMAFAARABAAFQARABQAFgARABUAFwARABYA")],
+"name": "Leaves",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 54,
+"vertex_data": PackedByteArray("YEoUrrazAAAAABIadWwAAIBZLcx8kgAAgFktzPd1AAC8HT5VtrMAAAAAEhqZlAAAsjXshOhJAABpIoxe3kkAANRLoO91WwAAKWcAAAAAAABwbmDxZF8AAHKGS9WhVgAAOzjoibQxAABfRYUnVQwAANCbVViaJwAAYZNaLI4VAADoxdA/4hsAAPSueeajkAAAD6M/goErAACalzrJNFsAAPH1HB2cNwAA///PKbVOAAB67C+KtooAALfTY7nPlQAAPzlLFpaAAABhaeskxkAAADnE0ROfYwAADoebfXfsAACaqRcjDsIAACijP1Nd+AAAaLpyP/j0AAANhIe2sr0AAOnbhE43ygAAapvXxteaAACm2hNnArYAACO8+KoRlgAA5WOM6CG0AAA6gv2gVI8AAHZ+Ge4nuwAATJK28061AAC1WXfrT4sAAMWouf6JiwAAkWiJ875pAABlpP//5XkAAHyEcPuEYQAARDLxpcauAACfSwIir80AAC4j5WyJwwAAZyF3Q5TXAACtWNq/abYAAHg9QBiq/AAAU3Dpo17RAAAPTmIj//8AANNtmmmT7QAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fcn31"]
+resource_name = "Plant_7_Plane_011"
+_surfaces = [{
+"aabb": AABB(-0.44815123, 0.07910457, -0.46386588, 1.0478355, 0.24951479, 0.962121),
+"attribute_data": PackedByteArray("n6u82dSmdLSEtxXWC75fz/Webc2lnea9970gu4G4zbWfq7zZ1KZ0tIS3FdYLvl/P9Z5tzaWd5r33vSC7gbjNtdSmdLSfq7zZpZ3mvfWebc2BuM21970guwu+X8+EtxXWY6/8xWOv/MVjr/zFn6u82WOv/MWEtxXWC75fz/Webc33vSC7pZ3mvYG4zbXUpnS0n6u82WOv/MWEtxXWC75fz/Webc33vSC7pZ3mvYG4zbXUpnS0n6u82WOv/MWEtxXWC75fz/Webc33vSC7pZ3mvYG4zbXUpnS0"),
+"format": 34896613399,
+"index_count": 144,
+"index_data": PackedByteArray("AAAYAAIAAgAYAAMABAAYAAAAAwAYAAYABQAYAAQABgAYAAcAAQAYAAUABwAYAAEACAAZAAoACgAZAAsADAAZAAgACwAZAA4ADQAZAAwADgAZAA8ACQAZAA0ADwAZAAkAEQAaABcAFwAaABYAEwAaABEAFgAaABUAEgAaABMAFQAaABQAEAAaABIAFAAaABAAGwAcAB0AHQAcAB4AHwAcABsAHgAcACAAIQAcAB8AIAAcACIAIwAcACEAIgAcACMAJAAlACYAJgAlACcAKAAlACQAJwAlACkAKgAlACgAKQAlACsALAAlACoAKwAlACwALQAuAC8ALwAuADAAMQAuAC0AMAAuADIAMwAuADEAMgAuADQANQAuADMANAAuADUA"),
+"lods": [0.21054845, PackedByteArray("AAABAAIAAgABAAMABAABAAAABQABAAQAAwABAAYABgABAAcACAAJAAoACgAJAAsADAAJAAgADQAJAAwACwAJAA4ADgAJAA8AEAARABIAEgARABMAFAARABAAFQARABQAFgARABUAFwARABYA")],
+"material": SubResource("StandardMaterial3D_mfgn8"),
+"name": "Leaves",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 54,
+"vertex_data": PackedByteArray("YEoUrrazC90AABIadWx7wIBZLcx8krLZgFktzPd1H9K8HT5VtrNj2AAAEhqZlIjLsjXshOhJn8ZpIoxe3kmev9RLoO91W7HoKWcAAAAAEchwbmDxZF/h6nKGS9WhVqLkOzjoibQxOd5fRYUnVQwy0dCbVViaJ4LVYZNaLI4VkcroxdA/4hsAwPSueeajkFffD6M/goErZ8qalzrJNFvB1vH1HB2cN+e////PKbVO1Ml67C+KtopC2bfTY7nPlT/gPzlLFpaAcc1haeskxkBC2TnE0ROfY4/PDoebfXfsQ8yaqRcjDsLGviijP1Nd+HDPaLpyP/j0ncoNhIe2sr0yw+nbhE43yqS8apvXxtea6bim2hNnAraEsiO8+KoRlviw5WOM6CG0rc86gv2gVI9LwXZ+Ge4nu2DTTJK28061uM61WXfrT4vcxMWouf6Ji4LAkWiJ875pe7hlpP//5Xm1tHyEcPuEYV+wRDLxpcauI+OfSwIir81Q5C4j5WyJwxjtZyF3Q5TXcfCtWNq/abY52ng9QBiq/ADsU3Dpo17RqNsPTmIj//8+5tNtmmmT7VXgZvlTUvfluEOI+uW1Efltvh/rpFB95Z1MPvtBPdnuYjs24sqKLtq5kpjkmZZe5LqhxdxMg2rXTokN5cylLOUnnZrUr4bp39p7K8/eetvOj3S23myRPOb5lcrmF5Oz5taJgfQrScPhlpKn4NmFmtFigeTGFZDtzqSQScvYmwXCiHevxcijRr6WgeG97KGxt+6T99fTjQbS55nJ1FacF9MzpwjWr4Jc0uCunsy/imDO+aqFyDqbgIsyoJSI+q/8kzyiVpZkqdp72aWXkle1vHUYrxSJBr6WesK7")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_l0lvj")
+
+[node name="Plant_72" type="Node3D" unique_id=824497933]
+
+[node name="Plant_7" type="MeshInstance3D" parent="." unique_id=2121723067]
+mesh = SubResource("ArrayMesh_fcn31")
+skeleton = NodePath("")

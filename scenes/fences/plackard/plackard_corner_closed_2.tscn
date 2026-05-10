@@ -1,0 +1,54 @@
+[gd_scene format=4 uid="uid://cv22kw0ajlj73"]
+
+[ext_resource type="Texture2D" uid="uid://cmtjx5a488gdt" path="res://assets/structures/all_fences/plackard/plackard_corner_closed_plackard_wall.jpg" id="1_rdd1t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h31ip"]
+resource_name = "Plackard_wall"
+cull_mode = 2
+albedo_texture = ExtResource("1_rdd1t")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_agy1i"]
+_surfaces = [{
+"aabb": AABB(-0.100000024, 0, -0.100000024, 0.20000005, 2.5, 0.20000005),
+"format": 34896613377,
+"index_count": 108,
+"index_data": PackedByteArray("AAABAAIAAwACAAEABAAAAAIAAwAEAAIABAAFAAAABgADAAEABgAEAAMAAQAAAAcABQAHAAAABAAIAAUABQAIAAcABAAGAAgAAQAHAAkABgABAAkACgAHAAgACwAIAAYACgAIAAsACQAMAAYACwAGAAwADQAJAAcACQANAAwADQAHAAoADgAMAA0ADgALAAwACgAPAA0ADgANAA8AEAAKAAsACwAOABEAEQAOAA8AEAALABIACwARABIAEwAKABAACgATAA8AEgATABAAEQAPABMAEgARABMA"),
+"name": "Plackard_wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AAD///+/AAD///////8AAAAA/////wAA//8AAP//AAAAAAAA//8AAAAAAAD/vwAA//8AAP+/AAD/P////78AAP8/AAD/vwAA//////+/AAD/P////z8AAP8/AAD/PwAA//8AAP8/AAD//////z8AAP//AAAAAAAA/////wAAAAAAAP///z8AAAAAAAAAAAAAAAAAAP8/AAAAAP//AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8ufr7"]
+resource_name = "plackard_corner_closed_Cube_005"
+_surfaces = [{
+"aabb": AABB(-0.100000024, 0, -0.100000024, 0.20000005, 2.5, 0.20000005),
+"attribute_data": PackedByteArray("fIbRamOL811ji9FqfIaaZ3yG812vfPNdr3yaZ8h3813Id9Fqr3zRahv8810QB9FqEAfzXRv80Wob/NFqEAfzXRAH0Wob/PNdG/yaZxAH0WoQB5pnG/zRahv8K2EQBythG/zzXRAH810b/NFqEAeaZxAH0Wob/JpnyHfzXa98mmevfPNdyHfRaq980Wp8hvNdfIaaZ2OL0Wpji/NdfIbRahv8K2EQB/NdEAcrYRv8810b/NFqEAeaZxAH0Wob/JpnEAfRahv8mmcb/NFqEAeaZxAHK2Eb/JpnG/wrYRAHmmc="),
+"format": 34896613399,
+"index_count": 108,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMAAQADAAQABQAEAAMABQADAAYABgAHAAUABgAIAAcACAAGAAkACgALAAwACgANAAsADgAPABAADgARAA8AEgATABQAEgAVABMAFAAWABIAFAAXABYAGAAWABcAGAAXABkAGgAbABwAGgAdABsAHgAfACAAHwAeACEAHwAhACIAHwAjACAAHwAkACMAJQAjACQAIwAlACYAJQAkACcAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUA"),
+"material": SubResource("StandardMaterial3D_h31ip"),
+"name": "Plackard_wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 56,
+"vertex_data": PackedByteArray("AAD///+/VNX///////9U1QAA/////1TV/z////+/VNX//////79U1f//////P1TV/z////8/VNX/////AABU1QAA//8AAFTVAAD///8/VNX//wAA////vwAA//////+//////////78AAAAA////vwAAAAAAAAAA/////wAAAAAAAP//AAAAAP//AAAAAAAA//8AAP+/VNX///////9U1f//////v1TV//8AAP//VNX//wAA/z9U1f//////P1TV//8AAAAAVNX/////AABU1QAAAAD//6oqAAD///+/qioAAP////+qKgAAAAD/v6oq//8AAAAAqir/PwAA/z+qKv//AAD/P6oqAAAAAAAAqioAAAAA/z+qKv//AAD/v6oq/z8AAP+/qioAAAAA//+qKv//AAD//6oqAAAAAP+/qioAAAAA/z+qKgAA//8AAKoqAAD///8/qioAAAAAAACqKgAAAAD/vwAA/z////+/AAAAAP///78AAP8/AAD/vwAAAAD///8//7//PwAA/z//vwAAAAD/P/+//z////8//7//P////z+qKv8/AAD/v6oq/z8AAP8/qir/P////7+qKqmqqqqpqqqqqqqqqqmqqqqqqqqqqqqpqqmqqqqpqqqqqaqqqqqqqqr/f/9//3//f/9//3//f/9//7//P/8//7//P/+//7//P6qqVFWpqlRVqqpUVaqqVFWqqlRVqqpUVaqqVFWpqlRVVFWpqlRVqqpUVaqqVFWpqqoqVNWqKlTVqipU1aoqVNWqKlTVqipU1aoqVNWqKlTVqipU1aoqVNVUVamqVFWqqlRVqqpUVamq/7//P/8//7//P/+//7//P/9//3//f/9//3//f/9//39UVamqVFWqqlRVqqpUVamq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_agy1i")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1lnxy"]
+size = Vector3(0.20000005, 2.5, 0.20000005)
+
+[node name="plackard_corner_closed2" type="StaticBody3D" unique_id=1446252243]
+
+[node name="plackard_corner_closed" type="MeshInstance3D" parent="." unique_id=1964283074]
+mesh = SubResource("ArrayMesh_8ufr7")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1181852903]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0)
+shape = SubResource("BoxShape3D_1lnxy")

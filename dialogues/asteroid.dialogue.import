@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dbnjgg8ov2bul"
+path="res://.godot/imported/asteroid.dialogue-731b201e9e6dcbc3bac34a79c0895837.tres"
+
+[deps]
+
+source_file="res://dialogues/asteroid.dialogue"
+dest_files=["res://.godot/imported/asteroid.dialogue-731b201e9e6dcbc3bac34a79c0895837.tres"]
+
+[params]
+
+defaults=true

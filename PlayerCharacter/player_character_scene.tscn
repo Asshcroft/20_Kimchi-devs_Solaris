@@ -1,0 +1,402 @@
+[gd_scene format=3 uid="uid://dnyif2y6pelec"]
+
+[ext_resource type="Script" uid="uid://d3s8yxuvpmekm" path="res://PlayerCharacter/StateMachine/player_character_script.gd" id="1_h128t"]
+[ext_resource type="Script" uid="uid://b0fbr48rbvn27" path="res://PlayerCharacter/Camera/camera_script.gd" id="2_x12n0"]
+[ext_resource type="Script" uid="uid://8g033x6qm1rx" path="res://PlayerCharacter/StateMachine/fly_state_script.gd" id="9_ph066"]
+[ext_resource type="PackedScene" uid="uid://v30ucphjkxar" path="res://scenes/objects/guider.tscn" id="13_a8uvg"]
+[ext_resource type="Script" uid="uid://bam6wpm0optmg" path="res://scripts/Character/camera_3d.gd" id="14_kev80"]
+[ext_resource type="Shader" uid="uid://d14us1r7p121p" path="res://shaders/teleportation.gdshader" id="14_ner60"]
+[ext_resource type="FontFile" uid="uid://divtovrhtu27m" path="res://Fonts/Audiowide-Regular.ttf" id="15_6aj5y"]
+[ext_resource type="Script" uid="uid://d3i4jv5kwt1j7" path="res://PlayerCharacter/hud.gd" id="16_kxghy"]
+[ext_resource type="Shader" uid="uid://bc4duwhusp5v7" path="res://shaders/VHS.gdshader" id="17_8j0e5"]
+[ext_resource type="Texture2D" uid="uid://bon1xwutbnwea" path="res://assets/crosshair/bracket_crosshair_32x32.png" id="18_ner60"]
+[ext_resource type="Texture2D" uid="uid://x0ocmo4w63hq" path="res://assets/UI/GUI/blood_hud.png" id="19_kxghy"]
+[ext_resource type="Shader" uid="uid://dicwav4cwab2f" path="res://shaders/dithering.gdshader" id="28_phcfb"]
+[ext_resource type="Script" uid="uid://ci54cr46grkob" path="res://PlayerCharacter/pick_up_scripts.gd" id="29_ql4cm"]
+[ext_resource type="AudioStream" uid="uid://bqv0nw8ervfyg" path="res://sounds/character/equipment.mp3" id="35_ro0qi"]
+[ext_resource type="Script" uid="uid://sca7ypsol83f" path="res://PlayerCharacter/StateMachine/state_machine_script.gd" id="54_e0r17"]
+[ext_resource type="Script" uid="uid://stil4xkf3tk0" path="res://PlayerCharacter/StateMachine/idle_state_script.gd" id="55_dayh2"]
+[ext_resource type="Script" uid="uid://blt7dest23fk0" path="res://PlayerCharacter/StateMachine/walk_state_script.gd" id="56_w3td4"]
+[ext_resource type="Script" uid="uid://5gk47o641xgt" path="res://PlayerCharacter/StateMachine/run_state_script.gd" id="57_gwv0a"]
+[ext_resource type="Script" uid="uid://dvu58wf01wils" path="res://PlayerCharacter/StateMachine/jump_state_script.gd" id="58_gwv0a"]
+[ext_resource type="Script" uid="uid://bh3rdvokmrar1" path="res://PlayerCharacter/StateMachine/inair_state_script.gd" id="59_bqtt6"]
+
+[sub_resource type="Curve" id="Curve_s7fsc"]
+_limits = [10.0, 30.0, 0.0, 60.0]
+_data = [Vector2(0, 10), 0.0, 0.0, 0, 0, Vector2(60, 30), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_gfbru"]
+_limits = [3.0, 30.0, 0.0, 30.0]
+_data = [Vector2(0, 3), 0.0, 0.0, 0, 0, Vector2(30, 30), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_kev80"]
+frequency = 0.0315
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_6aj5y"]
+noise = SubResource("FastNoiseLite_kev80")
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_5o5l0"]
+ground_color = Color(0.81439555, 0.6934715, 0.56115395, 1)
+energy_multiplier = 3.0
+
+[sub_resource type="Sky" id="Sky_dlyfy"]
+sky_material = SubResource("PhysicalSkyMaterial_5o5l0")
+
+[sub_resource type="Environment" id="Environment_ro0qi"]
+background_mode = 2
+sky = SubResource("Sky_dlyfy")
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.5
+glow_enabled = true
+glow_intensity = 2.0
+glow_bloom = 0.05
+glow_hdr_scale = 4.0
+glow_map = SubResource("NoiseTexture2D_6aj5y")
+fog_enabled = true
+fog_mode = 1
+fog_sun_scatter = 0.1
+fog_density = 1.0
+fog_aerial_perspective = 1.0
+fog_depth_curve = 1.4142137
+fog_depth_begin = 100.0
+fog_depth_end = 1500.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.02
+volumetric_fog_albedo = Color(0.575667, 0.43995693, 0.23536327, 1)
+volumetric_fog_emission_energy = 0.0
+volumetric_fog_length = 32.0
+volumetric_fog_detail_spread = 1.0717736
+adjustment_enabled = true
+adjustment_contrast = 1.2
+adjustment_saturation = 1.2
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_6aj5y"]
+radius = 0.05
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7qx7s"]
+render_priority = -1
+shader = ExtResource("28_phcfb")
+shader_parameter/enable_fog = false
+shader_parameter/fog_color = Color(0.76858187, 0.7866909, 0.8074096, 1)
+shader_parameter/noise_color = Color(0, 0, 0, 1)
+shader_parameter/fog_distance = 1000.0000474525
+shader_parameter/fog_fade_range = 50.0
+shader_parameter/enable_noise = false
+shader_parameter/noise_time_fac = 0.10000000149012
+shader_parameter/enable_color_limitation = true
+shader_parameter/color_levels = 44
+shader_parameter/enable_dithering = false
+shader_parameter/dither_strength = 0.0
+
+[sub_resource type="QuadMesh" id="QuadMesh_obyny"]
+size = Vector2(3, 2)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jg5mx"]
+shader = ExtResource("17_8j0e5")
+shader_parameter/shake_power = 0.1
+shader_parameter/shake_rate = 0.2000000095
+shader_parameter/shake_speed = 100.0
+shader_parameter/shake_block_size = 30.5
+shader_parameter/shake_color_rate = 0.01
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kev80"]
+shader = ExtResource("14_ner60")
+shader_parameter/strength = 0.10000000149012
+shader_parameter/center = Vector2(0.5, 0.5)
+shader_parameter/radius = 0.0
+shader_parameter/aberration = 0.425
+shader_parameter/width = 0.04
+shader_parameter/feather = 0.135
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a8uvg"]
+margin = 10.0
+height = 2.5029297
+
+[sub_resource type="Animation" id="Animation_7ln3a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CameraHolder/Camera/fade_effect_layer/Teleportation:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_6aj5y"]
+resource_name = "teleportation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CameraHolder/Camera/fade_effect_layer/Teleportation:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.4, 0.46666667, 0.53333336, 0.6, 0.6666667, 0.73333335, 0.8, 0.8666667, 0.93333334, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.01880523, -0.058178388, -0.09255566, -0.09637325, -0.044067334, 0.08992585, 0.33117008, 0.66883004, 0.91007423, 1.0440674, 1.0963732, 1.0925556, 1.0581784, 1.0188053, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7ln3a"]
+_data = {
+&"RESET": SubResource("Animation_7ln3a"),
+&"teleportation": SubResource("Animation_6aj5y")
+}
+
+[node name="PlayerCharacter" type="CharacterBody3D" unique_id=284662724 node_paths=PackedStringArray("canvas_animation_player", "coldown") groups=["PlayerCharacter"]]
+collision_layer = 2
+collision_mask = 7
+floor_block_on_wall = false
+floor_max_angle = 1.13446
+floor_snap_length = 0.0
+platform_on_leave = 2
+platform_floor_layers = 4278190081
+script = ExtResource("1_h128t")
+desired_move_speed_curve = SubResource("Curve_s7fsc")
+in_air_move_speed_curve = SubResource("Curve_gfbru")
+base_hitbox_height = 2.5
+crouch_speed = 4.0
+walk_speed = 5.0
+walk_accel = 4.0
+walk_deccel = 5.0
+run_speed = 7.0
+run_accel = 4.0
+run_deccel = 4.0
+continious_run = true
+jump_height = 1.7
+jump_time_to_peak = 0.34
+jump_time_to_fall = 0.28
+nb_jumps_in_air_allowed = 0
+slide_accel = 10.0
+slide_time = 1.0
+max_slope_angle = 15.0
+dash_speed = 0.0
+dash_time = 0.0
+nb_dashs_allowed = 0
+time_bef_can_dash_again = 0.5
+time_bef_reload_dash = 1.0
+move_forward_action = "move_forward"
+move_backward_action = "move_backward"
+move_left_action = "move_left"
+move_right_action = "move_right"
+run_action = "run"
+crouch_action = "crouch"
+jump_action = "jump"
+slide_action = "slide"
+dash_action = "dash"
+fly_action = "fly"
+canvas_animation_player = NodePath("AnimationPlayer")
+coldown = NodePath("Timer")
+
+[node name="StateMachine" type="Node" parent="." unique_id=922158494 node_paths=PackedStringArray("initial_state")]
+script = ExtResource("54_e0r17")
+initial_state = NodePath("IdleState")
+
+[node name="IdleState" type="Node" parent="StateMachine" unique_id=400625240]
+script = ExtResource("55_dayh2")
+metadata/_custom_type_script = "uid://stil4xkf3tk0"
+
+[node name="WalkState" type="Node" parent="StateMachine" unique_id=1383703706]
+script = ExtResource("56_w3td4")
+metadata/_custom_type_script = "uid://blt7dest23fk0"
+
+[node name="RunState" type="Node" parent="StateMachine" unique_id=308979957]
+script = ExtResource("57_gwv0a")
+metadata/_custom_type_script = "uid://5gk47o641xgt"
+
+[node name="JumpState" type="Node" parent="StateMachine" unique_id=1962084026]
+script = ExtResource("58_gwv0a")
+metadata/_custom_type_script = "uid://dvu58wf01wils"
+
+[node name="InairState" type="Node" parent="StateMachine" unique_id=498981343]
+script = ExtResource("59_bqtt6")
+metadata/_custom_type_script = "uid://bh3rdvokmrar1"
+
+[node name="FlyState" type="Node" parent="StateMachine" unique_id=1333263144]
+script = ExtResource("9_ph066")
+metadata/_custom_type_script = "uid://8g033x6qm1rx"
+
+[node name="CameraHolder" type="Node3D" parent="." unique_id=662765690]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.1601195, 0)
+script = ExtResource("2_x12n0")
+
+[node name="Camera" type="Camera3D" parent="CameraHolder" unique_id=1636675483 node_paths=PackedStringArray("fade_rect")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, -7.1054274e-15, 0, 1, 0, 7.1054274e-15, 0, 1, 0, 0.22053534, 0)
+cull_mask = 1048573
+environment = SubResource("Environment_ro0qi")
+current = true
+fov = 80.0
+script = ExtResource("14_kev80")
+fade_rect = NodePath("fade_effect_layer/white")
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="CameraHolder/Camera" unique_id=454161554]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5796204e-08, 0, -0.5901483)
+shape = SubResource("SphereShape3D_6aj5y")
+target_position = Vector3(0, 0, -2.5)
+
+[node name="Label" type="Label" parent="CameraHolder/Camera/ShapeCast3D" unique_id=697842014]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 103.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("15_6aj5y")
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bullet_Point" type="Marker3D" parent="CameraHolder/Camera" unique_id=781378296]
+unique_name_in_owner = true
+transform = Transform3D(0.46528092, -0.726522, -0.50564945, 0.7379309, 0.002889047, 0.6748687, -0.48884422, -0.68714106, 0.53746647, 0.011965314, -0.011620462, -0.9034302)
+
+[node name="Bullet_Point_for_projectile" type="Marker3D" parent="CameraHolder/Camera" unique_id=1060399311]
+unique_name_in_owner = true
+transform = Transform3D(0.46528092, -0.726522, -0.50564945, 0.7379309, 0.002889047, 0.6748687, -0.48884422, -0.68714106, 0.53746647, 0.40075725, -0.26466995, -1.1172485)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CameraHolder/Camera" unique_id=209084730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6179467e-08, -0.6615838, -0.59891635)
+material_override = SubResource("ShaderMaterial_7qx7s")
+mesh = SubResource("QuadMesh_obyny")
+
+[node name="fade_effect_layer" type="CanvasLayer" parent="CameraHolder/Camera" unique_id=1864970899]
+
+[node name="white" type="ColorRect" parent="CameraHolder/Camera/fade_effect_layer" unique_id=538136569]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="VHS" type="ColorRect" parent="CameraHolder/Camera/fade_effect_layer" unique_id=1790882200]
+visible = false
+z_index = 1
+texture_filter = 1
+material = SubResource("ShaderMaterial_jg5mx")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Teleportation" type="ColorRect" parent="CameraHolder/Camera/fade_effect_layer" unique_id=1350875899]
+material = SubResource("ShaderMaterial_kev80")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GUIDER" parent="CameraHolder/Camera" unique_id=2056058872 instance=ExtResource("13_a8uvg")]
+transform = Transform3D(0.07459701, -0.019292101, 0.06374239, 0.025037987, 0.09681471, 0, -0.061712015, 0.015959814, 0.07705131, 0.335, -0.32, -0.403)
+
+[node name="Hitbox" type="CollisionShape3D" parent="." unique_id=1894307389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25146484, 0)
+shape = SubResource("CapsuleShape3D_a8uvg")
+
+[node name="Raycasts" type="Node3D" parent="." unique_id=762983725]
+
+[node name="FloorCheck" type="RayCast3D" parent="Raycasts" unique_id=1086920679]
+unique_name_in_owner = true
+exclude_parent = false
+target_position = Vector3(0, -3, 0)
+debug_shape_custom_color = Color(0, 0.823529, 0.956863, 1)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=62277729]
+script = ExtResource("16_kxghy")
+metadata/_edit_use_anchors_ = true
+
+[node name="Blood_fill" type="ColorRect" parent="HUD" unique_id=587614630]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.41960785, 0, 0, 0)
+
+[node name="blood" type="TextureRect" parent="HUD" unique_id=1669246383]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -71.111084
+offset_top = -40.0
+offset_right = 71.111084
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("19_kxghy")
+
+[node name="Crosshair" type="TextureRect" parent="HUD" unique_id=1753377370]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -63.0
+offset_top = -63.0
+offset_right = 63.0
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+pivot_offset = Vector2(62, 62)
+mouse_filter = 2
+texture = ExtResource("18_ner60")
+expand_mode = 2
+
+[node name="HUD_Sounds" type="AudioStreamPlayer3D" parent="HUD" unique_id=637751967]
+unique_name_in_owner = true
+
+[node name="sounds" type="Node3D" parent="." unique_id=58801166]
+
+[node name="sound_player" type="AudioStreamPlayer3D" parent="sounds" unique_id=573903027]
+unique_name_in_owner = true
+volume_db = -10.0
+max_db = 0.0
+
+[node name="walk_timer" type="Timer" parent="sounds" unique_id=100380526]
+wait_time = 0.5
+one_shot = true
+
+[node name="jump_timer" type="Timer" parent="sounds" unique_id=1232856695]
+wait_time = 0.1
+one_shot = true
+
+[node name="PickUp" type="AudioStreamPlayer3D" parent="sounds" unique_id=965367456]
+unique_name_in_owner = true
+stream = ExtResource("35_ro0qi")
+volume_db = 2.0
+max_db = 6.0
+pitch_scale = 1.4
+
+[node name="Pick_Up_Scripts" type="Node" parent="." unique_id=1590769565]
+script = ExtResource("29_ql4cm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1945303622]
+libraries/ = SubResource("AnimationLibrary_7ln3a")
+
+[node name="Timer" type="Timer" parent="." unique_id=546650536]
+wait_time = 1.5
+one_shot = true
+
+[connection signal="change_fov" from="StateMachine" to="CameraHolder" method="change_fov"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
